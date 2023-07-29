@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using PetFood.BusinessLogic.Filters;
 using PetFood.BusinessLogic.Implementations;
 using PetFood.BusinessLogic.Interfaces;
 using PetFood.BusinessLogic.Mappings;
@@ -56,6 +57,8 @@ namespace PetFood.Extensions
             services.AddScoped<IUserAuthenticationRepository, UserAuthenticationRepository>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<Microsoft.Extensions.Logging.ILogger, Logger<ValidationFilterAttribute>>();
+            services.AddScoped<ValidationFilterAttribute>();
         }
 
         public static void ConfigureJWT(this IServiceCollection services, IConfiguration configuration)
