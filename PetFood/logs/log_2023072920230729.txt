@@ -1,0 +1,12 @@
+2023-07-29 12:42:00.196 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-29 12:42:00.494 +03:00 [INF] Now listening on: https://localhost:7256
+2023-07-29 12:42:00.495 +03:00 [INF] Now listening on: http://localhost:5256
+2023-07-29 12:42:00.498 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-29 12:42:00.499 +03:00 [INF] Hosting environment: Development
+2023-07-29 12:42:00.500 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-07-29 12:42:01.504 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-07-29 12:42:01.887 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 391.0410ms
+2023-07-29 12:42:01.934 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-07-29 12:42:01.941 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 6.3607ms
+2023-07-29 12:42:02.038 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-07-29 12:42:02.153 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.7354ms
