@@ -10,6 +10,7 @@ using PetFood.BusinessLogic.Interfaces;
 using PetFood.BusinessLogic.Mappings;
 using PetFood.DAL.DatabaseContext;
 using PetFood.DAL.Models;
+using Serilog;
 using System.Text;
 
 namespace PetFood.Extensions
@@ -120,6 +121,20 @@ namespace PetFood.Extensions
                     new string[] {}
                 }
             });
+            });
+        }
+
+        public static void ConfigureLogging(this IServiceCollection services)
+        {
+            Log.Logger = new LoggerConfiguration()
+                .WriteTo.Console()
+                .WriteTo.File($"logs/log_{DateTime.Now:yyyyMMdd}.txt", rollingInterval: RollingInterval.Day)
+                .CreateLogger();
+
+            services.AddLogging(builder =>
+            {
+                builder.ClearProviders();
+                builder.AddSerilog();
             });
         }
     }
