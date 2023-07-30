@@ -27,11 +27,11 @@ namespace PetFood.BusinessLogic.Implementations
         {
             _user = await _userManager.FindByNameAsync(userLogin.Username);
             
-            var signinCredentials = GetSigningCredentials();
+            var signingCredentials = GetSigningCredentials();
             var claims = await GetClaims();
-            var toketOptions = GenerateTokenOptions(signinCredentials, claims);
+            var tokenOptions = GenerateTokenOptions(signingCredentials, claims);
 
-            return new JwtSecurityTokenHandler().WriteToken(toketOptions);
+            return new JwtSecurityTokenHandler().WriteToken(tokenOptions);
         }
 
         private SigningCredentials GetSigningCredentials()

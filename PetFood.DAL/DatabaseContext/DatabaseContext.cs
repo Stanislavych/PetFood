@@ -14,5 +14,9 @@ namespace PetFood.DAL.DatabaseContext
         {
             base.OnModelCreating(builder);
         }
+
+        public DbSet<Pet> Pets { get; set; }
+        public DbSet<FoodType> FoodTypes { get; set; }
+        public DbSet<FoodItem> FoodItems { get; set; }
     }
 }

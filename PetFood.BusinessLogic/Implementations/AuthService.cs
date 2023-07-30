@@ -23,7 +23,7 @@ namespace PetFood.BusinessLogic.Implementations
         public Task<bool> ValidateUserAsync(UserLoginDto userLogin)
         {
             var result = _repository.UserAuthentication.ValidateUserAsync(userLogin);
-            
+
             return result;
         }
     }

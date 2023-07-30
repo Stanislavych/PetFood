@@ -43,6 +43,9 @@ namespace PetFood.Extensions
             var mapperConfig = new MapperConfiguration(map =>
             {
                 map.AddProfile<UserMappingProfile>();
+                map.AddProfile<PetMappingProfile>();
+                map.AddProfile<FoodTypeMappingProfile>();
+                map.AddProfile<FoodItemMappingProfile>();
             });
             services.AddSingleton(mapperConfig.CreateMapper());
         }
@@ -55,8 +58,14 @@ namespace PetFood.Extensions
         public static void RegisterDependencies(this IServiceCollection services)
         {
             services.AddScoped<IUserAuthenticationRepository, UserAuthenticationRepository>();
+            services.AddScoped<IPetRepository, PetRepository>();
+            services.AddScoped<IFoodItemRepository, FoodItemRepository>();
+            services.AddScoped<IFoodTypeRepository, FoodTypeRepository>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IPetService, PetService>();
+            services.AddScoped<IFoodTypeService, FoodTypeService>();
+            services.AddScoped<IFoodItemService, FoodItemService>();
             services.AddScoped<Microsoft.Extensions.Logging.ILogger, Logger<ValidationFilterAttribute>>();
             services.AddScoped<ValidationFilterAttribute>();
         }
