@@ -30,6 +30,22 @@ namespace PetFood.Extensions
             })
                 .AddEntityFrameworkStores<DatabaseContext>()
                 .AddDefaultTokenProviders();
+
+            var roleManager = builder.Services.BuildServiceProvider().GetService<RoleManager<IdentityRole>>();
+            var userRoleExist = roleManager.RoleExistsAsync("User").Result;
+            var administratorRoleExist = roleManager.RoleExistsAsync("Administrator").Result;
+
+            if (!userRoleExist)
+            {
+                var userRole = new IdentityRole("User");
+                roleManager.CreateAsync(userRole).Wait();
+            }
+            
+            if (!administratorRoleExist)
+            {
+                var administratorRole = new IdentityRole("Administrator");
+                roleManager.CreateAsync(administratorRole).Wait();
+            }
         }
 
         public static void ConfigureSqlContext(this IServiceCollection services, IConfiguration configuration)
@@ -62,6 +78,8 @@ namespace PetFood.Extensions
             services.AddScoped<IFoodItemRepository, FoodItemRepository>();
             services.AddScoped<IFoodTypeRepository, FoodTypeRepository>();
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IRoleService, RoleService>();
+            services.AddScoped<IUserService, UserService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IPetService, PetService>();
             services.AddScoped<IFoodTypeService, FoodTypeService>();

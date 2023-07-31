@@ -8,7 +8,8 @@ namespace PetFood.BusinessLogic.Mappings
     {
         public UserMappingProfile()
         {
-            CreateMap<UserRegistrationDto, User>();
+            CreateMap<UserRegistrationDto, User>().ReverseMap();
+            CreateMap<UserDto, User>().ReverseMap();
         }
     }
 }

@@ -1,0 +1,1021 @@
+2023-07-31 12:40:11.848 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 12:40:12.445 +03:00 [INF] Now listening on: https://localhost:7256
+2023-07-31 12:40:12.446 +03:00 [INF] Now listening on: http://localhost:5256
+2023-07-31 12:40:12.450 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-31 12:40:12.451 +03:00 [INF] Hosting environment: Development
+2023-07-31 12:40:12.452 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-07-31 12:40:15.158 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-07-31 12:40:16.296 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 1150.3410ms
+2023-07-31 12:40:16.343 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-07-31 12:40:16.356 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 12.5114ms
+2023-07-31 12:40:16.768 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-07-31 12:40:16.918 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 150.8202ms
+2023-07-31 12:40:42.427 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/register application/json 143
+2023-07-31 12:40:42.987 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:40:43.033 +03:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(PetFood.BusinessLogic.Dto.UserRegistrationDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 12:40:43.538 +03:00 [ERR] Object sent from client is null. Controller: Auth, action: RegisterUser
+2023-07-31 12:40:43.549 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-07-31 12:40:43.558 +03:00 [INF] Executed action PetFood.Controllers.AuthController.RegisterUser (PetFood) in 517.249ms
+2023-07-31 12:40:43.565 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:40:43.569 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/register application/json 143 - 400 - text/plain;+charset=utf-8 1142.0955ms
+2023-07-31 12:41:23.486 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/register application/json 157
+2023-07-31 12:41:23.491 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:41:23.524 +03:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(PetFood.BusinessLogic.Dto.UserRegistrationDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 12:41:23.543 +03:00 [ERR] Object sent from client is null. Controller: Auth, action: RegisterUser
+2023-07-31 12:41:23.549 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-07-31 12:41:23.550 +03:00 [INF] Executed action PetFood.Controllers.AuthController.RegisterUser (PetFood) in 24.138ms
+2023-07-31 12:41:23.551 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:41:23.552 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/register application/json 157 - 400 - text/plain;+charset=utf-8 66.3680ms
+2023-07-31 12:41:35.688 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/register application/json 162
+2023-07-31 12:41:35.693 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:41:35.696 +03:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(PetFood.BusinessLogic.Dto.UserRegistrationDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 12:41:35.716 +03:00 [ERR] Object sent from client is null. Controller: Auth, action: RegisterUser
+2023-07-31 12:41:35.718 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-07-31 12:41:35.722 +03:00 [INF] Executed action PetFood.Controllers.AuthController.RegisterUser (PetFood) in 24.1934ms
+2023-07-31 12:41:35.724 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:41:35.726 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/register application/json 162 - 400 - text/plain;+charset=utf-8 38.4028ms
+2023-07-31 12:42:53.751 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/register application/json 177
+2023-07-31 12:42:53.753 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:42:53.754 +03:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(PetFood.BusinessLogic.Dto.UserRegistrationDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 12:42:53.756 +03:00 [ERR] Object sent from client is null. Controller: Auth, action: RegisterUser
+2023-07-31 12:42:53.757 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-07-31 12:42:53.758 +03:00 [INF] Executed action PetFood.Controllers.AuthController.RegisterUser (PetFood) in 1.9623ms
+2023-07-31 12:42:53.759 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:42:53.761 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/register application/json 177 - 400 - text/plain;+charset=utf-8 10.5628ms
+2023-07-31 12:43:11.357 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/register application/json 177
+2023-07-31 12:43:11.364 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:43:11.365 +03:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(PetFood.BusinessLogic.Dto.UserRegistrationDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 12:43:11.369 +03:00 [ERR] Object sent from client is null. Controller: Auth, action: RegisterUser
+2023-07-31 12:43:11.370 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-07-31 12:43:11.372 +03:00 [INF] Executed action PetFood.Controllers.AuthController.RegisterUser (PetFood) in 3.983ms
+2023-07-31 12:43:11.374 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:43:11.376 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/register application/json 177 - 400 - text/plain;+charset=utf-8 18.8811ms
+2023-07-31 12:45:01.168 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 12:45:01.473 +03:00 [INF] Now listening on: https://localhost:7256
+2023-07-31 12:45:01.474 +03:00 [INF] Now listening on: http://localhost:5256
+2023-07-31 12:45:01.480 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-31 12:45:01.481 +03:00 [INF] Hosting environment: Development
+2023-07-31 12:45:01.482 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-07-31 12:45:02.750 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-07-31 12:45:03.190 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 444.7597ms
+2023-07-31 12:45:03.242 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-07-31 12:45:03.248 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 6.6670ms
+2023-07-31 12:45:03.363 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-07-31 12:45:03.517 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 154.2657ms
+2023-07-31 12:45:46.766 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/register application/json 179
+2023-07-31 12:45:46.853 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:45:46.885 +03:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(PetFood.BusinessLogic.Dto.UserRegistrationDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 12:45:47.158 +03:00 [ERR] Object sent from client is null. Controller: Auth, action: RegisterUser
+2023-07-31 12:45:47.167 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-07-31 12:45:47.176 +03:00 [INF] Executed action PetFood.Controllers.AuthController.RegisterUser (PetFood) in 281.6508ms
+2023-07-31 12:45:47.183 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:45:47.187 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/register application/json 179 - 400 - text/plain;+charset=utf-8 421.6599ms
+2023-07-31 12:45:58.814 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/register application/json 177
+2023-07-31 12:45:58.818 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:45:58.821 +03:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(PetFood.BusinessLogic.Dto.UserRegistrationDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 12:45:58.834 +03:00 [ERR] Object sent from client is null. Controller: Auth, action: RegisterUser
+2023-07-31 12:45:58.843 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-07-31 12:45:58.845 +03:00 [INF] Executed action PetFood.Controllers.AuthController.RegisterUser (PetFood) in 20.4683ms
+2023-07-31 12:45:58.846 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:45:58.847 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/register application/json 177 - 400 - text/plain;+charset=utf-8 33.2648ms
+2023-07-31 12:46:06.732 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/register application/json 178
+2023-07-31 12:46:06.735 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:46:06.738 +03:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(PetFood.BusinessLogic.Dto.UserRegistrationDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 12:46:06.753 +03:00 [ERR] Object sent from client is null. Controller: Auth, action: RegisterUser
+2023-07-31 12:46:06.755 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-07-31 12:46:06.756 +03:00 [INF] Executed action PetFood.Controllers.AuthController.RegisterUser (PetFood) in 14.9246ms
+2023-07-31 12:46:06.757 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:46:06.759 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/register application/json 178 - 400 - text/plain;+charset=utf-8 27.2574ms
+2023-07-31 12:48:38.311 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 12:48:38.626 +03:00 [INF] Now listening on: https://localhost:7256
+2023-07-31 12:48:38.634 +03:00 [INF] Now listening on: http://localhost:5256
+2023-07-31 12:48:38.642 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-31 12:48:38.645 +03:00 [INF] Hosting environment: Development
+2023-07-31 12:48:38.647 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-07-31 12:48:39.660 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-07-31 12:48:40.024 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 367.8781ms
+2023-07-31 12:48:40.079 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-07-31 12:48:40.086 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 6.3536ms
+2023-07-31 12:48:40.184 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-07-31 12:48:40.326 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 142.4277ms
+2023-07-31 12:49:10.958 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/register application/json 152
+2023-07-31 12:49:11.042 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:49:11.076 +03:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(PetFood.BusinessLogic.Dto.UserRegistrationDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 12:49:11.367 +03:00 [WRN] User password validation failed: PasswordTooShort.
+2023-07-31 12:49:11.383 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Identity.IdentityResult'.
+2023-07-31 12:49:11.399 +03:00 [INF] Executed action PetFood.Controllers.AuthController.RegisterUser (PetFood) in 310.2696ms
+2023-07-31 12:49:11.408 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:49:11.416 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/register application/json 152 - 400 - application/json;+charset=utf-8 458.0264ms
+2023-07-31 12:49:27.460 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/register application/json 156
+2023-07-31 12:49:27.464 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:49:27.466 +03:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(PetFood.BusinessLogic.Dto.UserRegistrationDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 12:49:28.705 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 12:49:30.661 +03:00 [INF] Executed DbCommand (138ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 12:49:30.741 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-31 12:49:31.040 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2023-07-31 12:49:31.100 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-07-31 12:49:31.114 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-07-31 12:49:31.271 +03:00 [INF] Executed action PetFood.Controllers.AuthController.RegisterUser (PetFood) in 3801.9804ms
+2023-07-31 12:49:31.276 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:49:31.286 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Role USER does not exist.
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.AddToRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at PetFood.BusinessLogic.Implementations.UserAuthenticationRepository.RegisterUserAsync(UserRegistrationDto userRegistration) in D:\Программы\Visual Studio\VS Projects\PetFood\PetFood.BusinessLogic\Implementations\UserAuthenticationRepository.cs:line 29
+   at PetFood.Controllers.AuthController.RegisterUser(UserRegistrationDto userRegistration) in D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\Controllers\AuthController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-31 12:49:31.391 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/register application/json 156 - 500 - text/plain;+charset=utf-8 3930.7909ms
+2023-07-31 12:50:14.642 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/login application/json 50
+2023-07-31 12:50:14.653 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.LoginUser (PetFood)'
+2023-07-31 12:50:14.658 +03:00 [INF] Route matched with {action = "LoginUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(PetFood.BusinessLogic.Dto.UserLoginDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 12:50:14.674 +03:00 [ERR] Object sent from client is null. Controller: Auth, action: LoginUser
+2023-07-31 12:50:14.676 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-07-31 12:50:14.677 +03:00 [INF] Executed action PetFood.Controllers.AuthController.LoginUser (PetFood) in 18.0072ms
+2023-07-31 12:50:14.679 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.LoginUser (PetFood)'
+2023-07-31 12:50:14.681 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/login application/json 50 - 400 - text/plain;+charset=utf-8 38.1954ms
+2023-07-31 12:51:05.187 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 12:51:05.569 +03:00 [INF] Now listening on: https://localhost:7256
+2023-07-31 12:51:05.580 +03:00 [INF] Now listening on: http://localhost:5256
+2023-07-31 12:51:05.585 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-31 12:51:05.587 +03:00 [INF] Hosting environment: Development
+2023-07-31 12:51:05.589 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-07-31 12:51:06.588 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-07-31 12:51:07.021 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 450.9301ms
+2023-07-31 12:51:07.070 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-07-31 12:51:07.076 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 5.4423ms
+2023-07-31 12:51:07.165 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-07-31 12:51:07.349 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 184.1418ms
+2023-07-31 12:51:17.202 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/login application/json 50
+2023-07-31 12:51:17.286 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.LoginUser (PetFood)'
+2023-07-31 12:51:17.319 +03:00 [INF] Route matched with {action = "LoginUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(PetFood.BusinessLogic.Dto.UserLoginDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 12:51:17.581 +03:00 [ERR] Object sent from client is null. Controller: Auth, action: LoginUser
+2023-07-31 12:51:17.590 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-07-31 12:51:17.600 +03:00 [INF] Executed action PetFood.Controllers.AuthController.LoginUser (PetFood) in 270.6364ms
+2023-07-31 12:51:17.608 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.LoginUser (PetFood)'
+2023-07-31 12:51:17.616 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/login application/json 50 - 400 - text/plain;+charset=utf-8 413.9431ms
+2023-07-31 12:57:54.960 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 12:57:55.944 +03:00 [INF] Executed DbCommand (76ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 12:57:56.007 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 12:57:56.020 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 12:57:56.243 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+2023-07-31 12:57:56.294 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 12:57:56.302 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+2023-07-31 12:57:56.475 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 12:57:56.636 +03:00 [INF] Now listening on: https://localhost:7256
+2023-07-31 12:57:56.637 +03:00 [INF] Now listening on: http://localhost:5256
+2023-07-31 12:57:56.643 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-31 12:57:56.644 +03:00 [INF] Hosting environment: Development
+2023-07-31 12:57:56.645 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-07-31 12:57:57.747 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-07-31 12:57:58.354 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 616.6351ms
+2023-07-31 12:57:58.405 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-07-31 12:57:58.413 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 8.1373ms
+2023-07-31 12:57:58.526 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-07-31 12:57:58.662 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 136.3462ms
+2023-07-31 12:58:27.188 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 12:58:28.204 +03:00 [INF] Executed DbCommand (83ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 12:58:28.351 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 12:58:28.528 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 12:58:28.781 +03:00 [INF] Now listening on: https://localhost:7256
+2023-07-31 12:58:28.782 +03:00 [INF] Now listening on: http://localhost:5256
+2023-07-31 12:58:28.789 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-31 12:58:28.790 +03:00 [INF] Hosting environment: Development
+2023-07-31 12:58:28.792 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-07-31 12:58:29.933 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-07-31 12:58:30.258 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 332.1539ms
+2023-07-31 12:58:30.312 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-07-31 12:58:30.320 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 7.8067ms
+2023-07-31 12:58:30.449 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-07-31 12:58:30.605 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 155.4103ms
+2023-07-31 12:59:00.807 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/register application/json 156
+2023-07-31 12:59:00.914 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:59:00.947 +03:00 [INF] Route matched with {action = "RegisterUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(PetFood.BusinessLogic.Dto.UserRegistrationDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 12:59:01.087 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 12:59:01.107 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 12:59:01.158 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-31 12:59:01.397 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2023-07-31 12:59:01.451 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-07-31 12:59:01.483 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+2023-07-31 12:59:01.492 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-07-31 12:59:01.510 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 12:59:01.519 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-31 12:59:01.546 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+2023-07-31 12:59:01.568 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p16='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p17='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;
+SELECT @@ROWCOUNT;
+2023-07-31 12:59:01.594 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2023-07-31 12:59:01.603 +03:00 [INF] Executed action PetFood.Controllers.AuthController.RegisterUser (PetFood) in 646.5783ms
+2023-07-31 12:59:01.607 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.RegisterUser (PetFood)'
+2023-07-31 12:59:01.621 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/register application/json 156 - 201 0 - 814.0829ms
+2023-07-31 12:59:16.560 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/login application/json 50
+2023-07-31 12:59:16.564 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.LoginUser (PetFood)'
+2023-07-31 12:59:16.571 +03:00 [INF] Route matched with {action = "LoginUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(PetFood.BusinessLogic.Dto.UserLoginDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 12:59:16.596 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 12:59:16.605 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 12:59:16.631 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 12:59:16.751 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-31 12:59:17.293 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-07-31 12:59:17.304 +03:00 [INF] Executed action PetFood.Controllers.AuthController.LoginUser (PetFood) in 729.4852ms
+2023-07-31 12:59:17.308 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.LoginUser (PetFood)'
+2023-07-31 12:59:17.311 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/login application/json 50 - 200 - application/json;+charset=utf-8 751.2864ms
+2023-07-31 13:00:11.945 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Pet - -
+2023-07-31 13:00:12.060 +03:00 [INF] Executing endpoint 'PetFood.Controllers.PetController.GetAllPets (PetFood)'
+2023-07-31 13:00:12.065 +03:00 [INF] Route matched with {action = "GetAllPets", controller = "Pet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.PetDto]]] GetAllPets() on controller PetFood.Controllers.PetController (PetFood).
+2023-07-31 13:00:12.074 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 13:00:12.135 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+2023-07-31 13:00:12.147 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.PetDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-31 13:00:12.150 +03:00 [INF] Executed action PetFood.Controllers.PetController.GetAllPets (PetFood) in 82.4526ms
+2023-07-31 13:00:12.152 +03:00 [INF] Executed endpoint 'PetFood.Controllers.PetController.GetAllPets (PetFood)'
+2023-07-31 13:00:12.154 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Pet - - - 200 - application/json;+charset=utf-8 209.3364ms
+2023-07-31 13:00:27.162 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Pet - -
+2023-07-31 13:00:27.165 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2023-07-31 13:00:27.176 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-07-31 13:00:27.179 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Pet - - - 401 0 - 16.7481ms
+2023-07-31 13:09:38.283 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 13:09:39.281 +03:00 [INF] Executed DbCommand (77ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 13:09:39.449 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 13:09:39.611 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 13:09:39.765 +03:00 [INF] Now listening on: https://localhost:7256
+2023-07-31 13:09:39.767 +03:00 [INF] Now listening on: http://localhost:5256
+2023-07-31 13:09:39.771 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-31 13:09:39.772 +03:00 [INF] Hosting environment: Development
+2023-07-31 13:09:39.773 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-07-31 13:09:41.022 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-07-31 13:09:41.389 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 373.3727ms
+2023-07-31 13:09:41.434 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-07-31 13:09:41.449 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 14.9878ms
+2023-07-31 13:09:41.566 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-07-31 13:09:41.690 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.1597ms
+2023-07-31 13:09:44.457 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodType - -
+2023-07-31 13:09:44.559 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodTypeController.GetAllFoodTypes (PetFood)'
+2023-07-31 13:09:44.574 +03:00 [INF] Route matched with {action = "GetAllFoodTypes", controller = "FoodType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodTypeDto]]] GetAllFoodTypes() on controller PetFood.Controllers.FoodTypeController (PetFood).
+2023-07-31 13:09:44.629 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 13:09:44.693 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+2023-07-31 13:09:44.725 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodTypeDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-31 13:09:44.747 +03:00 [INF] Executed action PetFood.Controllers.FoodTypeController.GetAllFoodTypes (PetFood) in 160.6783ms
+2023-07-31 13:09:44.751 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodTypeController.GetAllFoodTypes (PetFood)'
+2023-07-31 13:09:44.767 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodType - - - 200 - application/json;+charset=utf-8 310.5928ms
+2023-07-31 13:10:08.566 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/FoodType application/json 62
+2023-07-31 13:10:08.570 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodTypeController.CreateFoodType (PetFood)'
+2023-07-31 13:10:08.592 +03:00 [INF] Route matched with {action = "CreateFoodType", controller = "FoodType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PetFood.BusinessLogic.Dto.FoodTypeDto]] CreateFoodType(PetFood.BusinessLogic.Dto.FoodTypeDto) on controller PetFood.Controllers.FoodTypeController (PetFood).
+2023-07-31 13:10:08.661 +03:00 [ERR] Object sent from client is null. Controller: FoodType, action: CreateFoodType
+2023-07-31 13:10:08.663 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-07-31 13:10:08.664 +03:00 [INF] Executed action PetFood.Controllers.FoodTypeController.CreateFoodType (PetFood) in 68.6133ms
+2023-07-31 13:10:08.666 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodTypeController.CreateFoodType (PetFood)'
+2023-07-31 13:10:08.667 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/FoodType application/json 62 - 400 - text/plain;+charset=utf-8 101.6210ms
+2023-07-31 13:11:09.030 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 13:11:10.046 +03:00 [INF] Executed DbCommand (104ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 13:11:10.169 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 13:11:10.330 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 13:11:10.484 +03:00 [INF] Now listening on: https://localhost:7256
+2023-07-31 13:11:10.485 +03:00 [INF] Now listening on: http://localhost:5256
+2023-07-31 13:11:10.490 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-31 13:11:10.491 +03:00 [INF] Hosting environment: Development
+2023-07-31 13:11:10.492 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-07-31 13:11:11.161 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-07-31 13:11:11.596 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 446.4160ms
+2023-07-31 13:11:11.641 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-07-31 13:11:11.649 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 8.0721ms
+2023-07-31 13:11:11.744 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-07-31 13:11:11.898 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 153.8535ms
+2023-07-31 13:11:28.789 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/FoodType application/json 62
+2023-07-31 13:11:28.881 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodTypeController.CreateFoodType (PetFood)'
+2023-07-31 13:11:28.911 +03:00 [INF] Route matched with {action = "CreateFoodType", controller = "FoodType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PetFood.BusinessLogic.Dto.FoodTypeDto]] CreateFoodType(PetFood.BusinessLogic.Dto.FoodTypeDto) on controller PetFood.Controllers.FoodTypeController (PetFood).
+2023-07-31 13:11:29.020 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 13:11:29.298 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [FoodTypes] ([Description], [Name], [PetId])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [FoodTypes]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-07-31 13:11:29.395 +03:00 [INF] Executing OkObjectResult, writing value of type 'PetFood.BusinessLogic.Dto.FoodTypeDto'.
+2023-07-31 13:11:29.408 +03:00 [INF] Executed action PetFood.Controllers.FoodTypeController.CreateFoodType (PetFood) in 485.8756ms
+2023-07-31 13:11:29.412 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodTypeController.CreateFoodType (PetFood)'
+2023-07-31 13:11:29.425 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/FoodType application/json 62 - 200 - application/json;+charset=utf-8 635.8342ms
+2023-07-31 13:11:38.659 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/FoodType application/json 54
+2023-07-31 13:11:38.663 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodTypeController.CreateFoodType (PetFood)'
+2023-07-31 13:11:38.665 +03:00 [INF] Route matched with {action = "CreateFoodType", controller = "FoodType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PetFood.BusinessLogic.Dto.FoodTypeDto]] CreateFoodType(PetFood.BusinessLogic.Dto.FoodTypeDto) on controller PetFood.Controllers.FoodTypeController (PetFood).
+2023-07-31 13:11:38.695 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 13:11:38.705 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [FoodTypes] ([Description], [Name], [PetId])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [FoodTypes]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-07-31 13:11:38.709 +03:00 [INF] Executing OkObjectResult, writing value of type 'PetFood.BusinessLogic.Dto.FoodTypeDto'.
+2023-07-31 13:11:38.710 +03:00 [INF] Executed action PetFood.Controllers.FoodTypeController.CreateFoodType (PetFood) in 42.5645ms
+2023-07-31 13:11:38.711 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodTypeController.CreateFoodType (PetFood)'
+2023-07-31 13:11:38.712 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/FoodType application/json 54 - 200 - application/json;+charset=utf-8 53.0648ms
+2023-07-31 13:11:43.037 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/FoodType application/json 52
+2023-07-31 13:11:43.049 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodTypeController.CreateFoodType (PetFood)'
+2023-07-31 13:11:43.053 +03:00 [INF] Route matched with {action = "CreateFoodType", controller = "FoodType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PetFood.BusinessLogic.Dto.FoodTypeDto]] CreateFoodType(PetFood.BusinessLogic.Dto.FoodTypeDto) on controller PetFood.Controllers.FoodTypeController (PetFood).
+2023-07-31 13:11:43.078 +03:00 [ERR] Object sent from client is null. Controller: FoodType, action: CreateFoodType
+2023-07-31 13:11:43.079 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-07-31 13:11:43.081 +03:00 [INF] Executed action PetFood.Controllers.FoodTypeController.CreateFoodType (PetFood) in 25.5563ms
+2023-07-31 13:11:43.083 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodTypeController.CreateFoodType (PetFood)'
+2023-07-31 13:11:43.084 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/FoodType application/json 52 - 400 - text/plain;+charset=utf-8 47.9734ms
+2023-07-31 13:11:58.071 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodType - -
+2023-07-31 13:11:58.072 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodTypeController.GetAllFoodTypes (PetFood)'
+2023-07-31 13:11:58.079 +03:00 [INF] Route matched with {action = "GetAllFoodTypes", controller = "FoodType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodTypeDto]]] GetAllFoodTypes() on controller PetFood.Controllers.FoodTypeController (PetFood).
+2023-07-31 13:11:58.085 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 13:11:58.141 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+2023-07-31 13:11:58.150 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodTypeDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-31 13:11:58.152 +03:00 [INF] Executed action PetFood.Controllers.FoodTypeController.GetAllFoodTypes (PetFood) in 70.6295ms
+2023-07-31 13:11:58.155 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodTypeController.GetAllFoodTypes (PetFood)'
+2023-07-31 13:11:58.156 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodType - - - 200 - application/json;+charset=utf-8 84.8472ms
+2023-07-31 13:12:08.154 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7256/api/FoodType/4 - -
+2023-07-31 13:12:08.156 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodTypeController.DeleteFoodType (PetFood)'
+2023-07-31 13:12:08.162 +03:00 [INF] Route matched with {action = "DeleteFoodType", controller = "FoodType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Int32]] DeleteFoodType(Int32) on controller PetFood.Controllers.FoodTypeController (PetFood).
+2023-07-31 13:12:08.170 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 13:12:08.179 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__foodTypeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+WHERE [f].[Id] = @__foodTypeId_0
+2023-07-31 13:12:08.214 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [FoodTypes]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2023-07-31 13:12:08.230 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-07-31 13:12:08.232 +03:00 [INF] Executed action PetFood.Controllers.FoodTypeController.DeleteFoodType (PetFood) in 66.6302ms
+2023-07-31 13:12:08.234 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodTypeController.DeleteFoodType (PetFood)'
+2023-07-31 13:12:08.236 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7256/api/FoodType/4 - - - 200 - text/plain;+charset=utf-8 81.6363ms
+2023-07-31 13:12:11.313 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodType - -
+2023-07-31 13:12:11.315 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodTypeController.GetAllFoodTypes (PetFood)'
+2023-07-31 13:12:11.316 +03:00 [INF] Route matched with {action = "GetAllFoodTypes", controller = "FoodType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodTypeDto]]] GetAllFoodTypes() on controller PetFood.Controllers.FoodTypeController (PetFood).
+2023-07-31 13:12:11.321 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 13:12:11.327 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+2023-07-31 13:12:11.330 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodTypeDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-31 13:12:11.331 +03:00 [INF] Executed action PetFood.Controllers.FoodTypeController.GetAllFoodTypes (PetFood) in 12.1935ms
+2023-07-31 13:12:11.332 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodTypeController.GetAllFoodTypes (PetFood)'
+2023-07-31 13:12:11.333 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodType - - - 200 - application/json;+charset=utf-8 20.1499ms
+2023-07-31 22:16:31.950 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:16:33.608 +03:00 [INF] Executed DbCommand (98ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 22:16:33.729 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 22:16:34.147 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 22:16:34.413 +03:00 [INF] Now listening on: https://localhost:7256
+2023-07-31 22:16:34.414 +03:00 [INF] Now listening on: http://localhost:5256
+2023-07-31 22:16:34.416 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-31 22:16:34.417 +03:00 [INF] Hosting environment: Development
+2023-07-31 22:16:34.418 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-07-31 22:16:35.788 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-07-31 22:16:36.242 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 464.8683ms
+2023-07-31 22:16:36.299 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-07-31 22:16:36.308 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 8.8169ms
+2023-07-31 22:16:36.730 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-07-31 22:16:36.874 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 144.2583ms
+2023-07-31 22:16:43.887 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Role - -
+2023-07-31 22:16:44.491 +03:00 [INF] Executing endpoint 'PetFood.Controllers.RoleController.GetAllRoles (PetFood)'
+2023-07-31 22:16:44.509 +03:00 [INF] Route matched with {action = "GetAllRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]]] GetAllRoles() on controller PetFood.Controllers.RoleController (PetFood).
+2023-07-31 22:16:44.559 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:16:44.592 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [AspNetRoles] AS [a]
+2023-07-31 22:16:44.610 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-07-31 22:16:44.620 +03:00 [INF] Executed action PetFood.Controllers.RoleController.GetAllRoles (PetFood) in 103.7821ms
+2023-07-31 22:16:44.623 +03:00 [INF] Executed endpoint 'PetFood.Controllers.RoleController.GetAllRoles (PetFood)'
+2023-07-31 22:16:44.634 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Role - - - 200 - application/json;+charset=utf-8 747.6848ms
+2023-07-31 22:17:28.026 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Role/assign?username=Baraban&roleName=Administrator - 0
+2023-07-31 22:17:28.028 +03:00 [INF] Executing endpoint 'PetFood.Controllers.RoleController.AssignRoleToUser (PetFood)'
+2023-07-31 22:17:28.041 +03:00 [INF] Route matched with {action = "AssignRoleToUser", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] AssignRoleToUser(System.String, System.String) on controller PetFood.Controllers.RoleController (PetFood).
+2023-07-31 22:17:28.100 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:17:28.121 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 22:17:28.211 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-07-31 22:17:28.256 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+2023-07-31 22:17:28.277 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-07-31 22:17:28.329 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 22:17:28.350 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-31 22:17:28.541 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+2023-07-31 22:17:28.570 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p16='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p17='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;
+SELECT @@ROWCOUNT;
+2023-07-31 22:17:28.612 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2023-07-31 22:17:28.615 +03:00 [INF] Executed action PetFood.Controllers.RoleController.AssignRoleToUser (PetFood) in 571.6528ms
+2023-07-31 22:17:28.616 +03:00 [INF] Executed endpoint 'PetFood.Controllers.RoleController.AssignRoleToUser (PetFood)'
+2023-07-31 22:17:28.617 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Role/assign?username=Baraban&roleName=Administrator - 0 - 200 - application/json;+charset=utf-8 591.7293ms
+2023-07-31 22:17:39.123 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Pet - -
+2023-07-31 22:17:39.135 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Administrator)
+2023-07-31 22:17:39.144 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-07-31 22:17:39.145 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Pet - - - 401 0 - 23.1294ms
+2023-07-31 22:17:54.403 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/login application/json 51
+2023-07-31 22:17:54.409 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.LoginUser (PetFood)'
+2023-07-31 22:17:54.413 +03:00 [INF] Route matched with {action = "LoginUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(PetFood.BusinessLogic.Dto.UserLoginDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 22:17:54.440 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:17:54.456 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 22:17:54.484 +03:00 [WRN] Invalid password for user.
+2023-07-31 22:17:54.489 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-07-31 22:17:54.492 +03:00 [INF] Executed action PetFood.Controllers.AuthController.LoginUser (PetFood) in 77.1878ms
+2023-07-31 22:17:54.494 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.LoginUser (PetFood)'
+2023-07-31 22:17:54.495 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/login application/json 51 - 401 - application/problem+json;+charset=utf-8 92.6502ms
+2023-07-31 22:17:59.966 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/login application/json 54
+2023-07-31 22:17:59.968 +03:00 [INF] Executing endpoint 'PetFood.Controllers.AuthController.LoginUser (PetFood)'
+2023-07-31 22:17:59.970 +03:00 [INF] Route matched with {action = "LoginUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(PetFood.BusinessLogic.Dto.UserLoginDto) on controller PetFood.Controllers.AuthController (PetFood).
+2023-07-31 22:17:59.974 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:17:59.995 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 22:18:00.009 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 22:18:00.122 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-31 22:18:00.549 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-07-31 22:18:00.554 +03:00 [INF] Executed action PetFood.Controllers.AuthController.LoginUser (PetFood) in 581.3069ms
+2023-07-31 22:18:00.556 +03:00 [INF] Executed endpoint 'PetFood.Controllers.AuthController.LoginUser (PetFood)'
+2023-07-31 22:18:00.557 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/login application/json 54 - 200 - application/json;+charset=utf-8 591.4153ms
+2023-07-31 22:18:13.333 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Pet - -
+2023-07-31 22:18:13.422 +03:00 [INF] Executing endpoint 'PetFood.Controllers.PetController.GetAllPets (PetFood)'
+2023-07-31 22:18:13.426 +03:00 [INF] Route matched with {action = "GetAllPets", controller = "Pet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.PetDto]]] GetAllPets() on controller PetFood.Controllers.PetController (PetFood).
+2023-07-31 22:18:13.431 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:18:13.494 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+2023-07-31 22:18:13.505 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.PetDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-31 22:18:13.508 +03:00 [INF] Executed action PetFood.Controllers.PetController.GetAllPets (PetFood) in 79.9603ms
+2023-07-31 22:18:13.510 +03:00 [INF] Executed endpoint 'PetFood.Controllers.PetController.GetAllPets (PetFood)'
+2023-07-31 22:18:13.513 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Pet - - - 200 - application/json;+charset=utf-8 180.3622ms
+2023-07-31 22:18:24.621 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Role - -
+2023-07-31 22:18:24.623 +03:00 [INF] Executing endpoint 'PetFood.Controllers.RoleController.GetAllRoles (PetFood)'
+2023-07-31 22:18:24.625 +03:00 [INF] Route matched with {action = "GetAllRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]]] GetAllRoles() on controller PetFood.Controllers.RoleController (PetFood).
+2023-07-31 22:18:24.640 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:18:24.649 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [AspNetRoles] AS [a]
+2023-07-31 22:18:24.651 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-07-31 22:18:24.652 +03:00 [INF] Executed action PetFood.Controllers.RoleController.GetAllRoles (PetFood) in 25.9411ms
+2023-07-31 22:18:24.653 +03:00 [INF] Executed endpoint 'PetFood.Controllers.RoleController.GetAllRoles (PetFood)'
+2023-07-31 22:18:24.654 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Role - - - 200 - application/json;+charset=utf-8 33.7375ms
+2023-07-31 22:18:31.915 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Role/Manager - 0
+2023-07-31 22:18:31.917 +03:00 [INF] Executing endpoint 'PetFood.Controllers.RoleController.CreateRole (PetFood)'
+2023-07-31 22:18:31.921 +03:00 [INF] Route matched with {action = "CreateRole", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] CreateRole(System.String) on controller PetFood.Controllers.RoleController (PetFood).
+2023-07-31 22:18:31.925 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:18:31.937 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 22:18:31.944 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 22:18:31.959 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+2023-07-31 22:18:31.964 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2023-07-31 22:18:31.966 +03:00 [INF] Executed action PetFood.Controllers.RoleController.CreateRole (PetFood) in 42.4187ms
+2023-07-31 22:18:31.967 +03:00 [INF] Executed endpoint 'PetFood.Controllers.RoleController.CreateRole (PetFood)'
+2023-07-31 22:18:31.968 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Role/Manager - 0 - 200 - application/json;+charset=utf-8 52.9980ms
+2023-07-31 22:18:34.794 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Role - -
+2023-07-31 22:18:34.796 +03:00 [INF] Executing endpoint 'PetFood.Controllers.RoleController.GetAllRoles (PetFood)'
+2023-07-31 22:18:34.797 +03:00 [INF] Route matched with {action = "GetAllRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]]] GetAllRoles() on controller PetFood.Controllers.RoleController (PetFood).
+2023-07-31 22:18:34.800 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:18:34.813 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [AspNetRoles] AS [a]
+2023-07-31 22:18:34.815 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-07-31 22:18:34.816 +03:00 [INF] Executed action PetFood.Controllers.RoleController.GetAllRoles (PetFood) in 16.9485ms
+2023-07-31 22:18:34.818 +03:00 [INF] Executed endpoint 'PetFood.Controllers.RoleController.GetAllRoles (PetFood)'
+2023-07-31 22:18:34.818 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Role - - - 200 - application/json;+charset=utf-8 24.9635ms
+2023-07-31 22:18:42.556 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7256/api/Role/Manager - -
+2023-07-31 22:18:42.558 +03:00 [INF] Executing endpoint 'PetFood.Controllers.RoleController.DeleteRole (PetFood)'
+2023-07-31 22:18:42.562 +03:00 [INF] Route matched with {action = "DeleteRole", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] DeleteRole(System.String) on controller PetFood.Controllers.RoleController (PetFood).
+2023-07-31 22:18:42.566 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:18:42.572 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 22:18:42.604 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [AspNetRoles]
+WHERE [Id] = @p0 AND [ConcurrencyStamp] = @p1;
+SELECT @@ROWCOUNT;
+2023-07-31 22:18:42.613 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2023-07-31 22:18:42.615 +03:00 [INF] Executed action PetFood.Controllers.RoleController.DeleteRole (PetFood) in 50.1321ms
+2023-07-31 22:18:42.616 +03:00 [INF] Executed endpoint 'PetFood.Controllers.RoleController.DeleteRole (PetFood)'
+2023-07-31 22:18:42.618 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7256/api/Role/Manager - - - 200 - application/json;+charset=utf-8 62.3060ms
+2023-07-31 22:18:45.708 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Role - -
+2023-07-31 22:18:45.710 +03:00 [INF] Executing endpoint 'PetFood.Controllers.RoleController.GetAllRoles (PetFood)'
+2023-07-31 22:18:45.712 +03:00 [INF] Route matched with {action = "GetAllRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]]] GetAllRoles() on controller PetFood.Controllers.RoleController (PetFood).
+2023-07-31 22:18:45.718 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:18:45.733 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [AspNetRoles] AS [a]
+2023-07-31 22:18:45.735 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-07-31 22:18:45.738 +03:00 [INF] Executed action PetFood.Controllers.RoleController.GetAllRoles (PetFood) in 20.2322ms
+2023-07-31 22:18:45.740 +03:00 [INF] Executed endpoint 'PetFood.Controllers.RoleController.GetAllRoles (PetFood)'
+2023-07-31 22:18:45.742 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Role - - - 200 - application/json;+charset=utf-8 34.0039ms
+2023-07-31 22:47:48.954 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:47:50.260 +03:00 [INF] Executed DbCommand (112ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 22:47:50.406 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 22:47:50.648 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 22:47:50.909 +03:00 [INF] Now listening on: https://localhost:7256
+2023-07-31 22:47:50.910 +03:00 [INF] Now listening on: http://localhost:5256
+2023-07-31 22:47:50.913 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-31 22:47:50.914 +03:00 [INF] Hosting environment: Development
+2023-07-31 22:47:50.914 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-07-31 22:47:51.887 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-07-31 22:47:52.434 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 554.4628ms
+2023-07-31 22:47:52.493 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-07-31 22:47:52.502 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 9.3066ms
+2023-07-31 22:47:52.606 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-07-31 22:47:52.738 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 131.3587ms
+2023-07-31 22:48:06.470 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/User - -
+2023-07-31 22:48:06.580 +03:00 [INF] Executing endpoint 'PetFood.Controllers.UserController.GetAllUsers (PetFood)'
+2023-07-31 22:48:06.602 +03:00 [INF] Route matched with {action = "GetAllUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.UserDto]]] GetAllUsers() on controller PetFood.Controllers.UserController (PetFood).
+2023-07-31 22:48:06.672 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:48:06.702 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2023-07-31 22:48:06.940 +03:00 [INF] Executed action PetFood.Controllers.UserController.GetAllUsers (PetFood) in 328.2192ms
+2023-07-31 22:48:06.944 +03:00 [INF] Executed endpoint 'PetFood.Controllers.UserController.GetAllUsers (PetFood)'
+2023-07-31 22:48:06.953 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[PetFood.DAL.Models.User, PetFood.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[PetFood.BusinessLogic.Dto.UserDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+User -> UserDto
+PetFood.DAL.Models.User -> PetFood.BusinessLogic.Dto.UserDto
+   at lambda_method168(Closure , User , UserDto , ResolutionContext )
+   at lambda_method167(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method167(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at PetFood.BusinessLogic.Implementations.UserService.GetAllUsersAsync() in D:\Программы\Visual Studio\VS Projects\PetFood\PetFood.BusinessLogic\Implementations\UserService.cs:line 37
+   at PetFood.Controllers.UserController.GetAllUsers() in D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\Controllers\UserController.cs:line 21
+   at lambda_method51(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-31 22:48:07.077 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/User - - - 500 - text/plain;+charset=utf-8 606.5194ms
+2023-07-31 22:49:07.047 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:49:08.492 +03:00 [INF] Executed DbCommand (82ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 22:49:08.606 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 22:49:08.779 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 22:49:08.942 +03:00 [INF] Now listening on: https://localhost:7256
+2023-07-31 22:49:08.943 +03:00 [INF] Now listening on: http://localhost:5256
+2023-07-31 22:49:08.946 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-31 22:49:08.947 +03:00 [INF] Hosting environment: Development
+2023-07-31 22:49:08.948 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-07-31 22:49:10.186 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-07-31 22:49:10.552 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 372.9412ms
+2023-07-31 22:49:10.594 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-07-31 22:49:10.603 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 8.9974ms
+2023-07-31 22:49:10.704 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-07-31 22:49:10.900 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 196.9313ms
+2023-07-31 22:49:14.327 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/User - -
+2023-07-31 22:49:14.839 +03:00 [INF] Executing endpoint 'PetFood.Controllers.UserController.GetAllUsers (PetFood)'
+2023-07-31 22:49:14.855 +03:00 [INF] Route matched with {action = "GetAllUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.UserDto]]] GetAllUsers() on controller PetFood.Controllers.UserController (PetFood).
+2023-07-31 22:49:14.923 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:49:14.956 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2023-07-31 22:49:15.064 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.UserDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-31 22:49:15.078 +03:00 [INF] Executed action PetFood.Controllers.UserController.GetAllUsers (PetFood) in 213.4975ms
+2023-07-31 22:49:15.083 +03:00 [INF] Executed endpoint 'PetFood.Controllers.UserController.GetAllUsers (PetFood)'
+2023-07-31 22:49:15.095 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/User - - - 200 - application/json;+charset=utf-8 768.5747ms
+2023-07-31 22:54:51.813 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:54:52.811 +03:00 [INF] Executed DbCommand (88ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 22:54:52.921 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-07-31 22:54:53.090 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 22:54:53.343 +03:00 [INF] Now listening on: https://localhost:7256
+2023-07-31 22:54:53.345 +03:00 [INF] Now listening on: http://localhost:5256
+2023-07-31 22:54:53.348 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-31 22:54:53.349 +03:00 [INF] Hosting environment: Development
+2023-07-31 22:54:53.350 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-07-31 22:54:54.914 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-07-31 22:54:55.284 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 379.7877ms
+2023-07-31 22:54:55.422 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-07-31 22:54:55.432 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 9.9618ms
+2023-07-31 22:54:55.516 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-07-31 22:54:55.681 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 164.9572ms
+2023-07-31 22:54:59.630 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/User - -
+2023-07-31 22:54:59.720 +03:00 [INF] Executing endpoint 'PetFood.Controllers.UserController.GetAllUsers (PetFood)'
+2023-07-31 22:54:59.738 +03:00 [INF] Route matched with {action = "GetAllUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.UserDto]]] GetAllUsers() on controller PetFood.Controllers.UserController (PetFood).
+2023-07-31 22:54:59.807 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:54:59.839 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2023-07-31 22:55:00.078 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-31 22:55:00.088 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-31 22:55:00.094 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-31 22:55:00.120 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.UserDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-31 22:55:00.133 +03:00 [INF] Executed action PetFood.Controllers.UserController.GetAllUsers (PetFood) in 385.743ms
+2023-07-31 22:55:00.137 +03:00 [INF] Executed endpoint 'PetFood.Controllers.UserController.GetAllUsers (PetFood)'
+2023-07-31 22:55:00.149 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/User - - - 200 - application/json;+charset=utf-8 519.0149ms
+2023-07-31 22:55:43.905 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Role/assign?username=Stanislavych&roleName=User - 0
+2023-07-31 22:55:43.908 +03:00 [INF] Executing endpoint 'PetFood.Controllers.RoleController.AssignRoleToUser (PetFood)'
+2023-07-31 22:55:43.930 +03:00 [INF] Route matched with {action = "AssignRoleToUser", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] AssignRoleToUser(System.String, System.String) on controller PetFood.Controllers.RoleController (PetFood).
+2023-07-31 22:55:43.994 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:55:44.012 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 22:55:44.028 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-07-31 22:55:44.051 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+2023-07-31 22:55:44.060 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-07-31 22:55:44.111 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 22:55:44.131 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-31 22:55:44.309 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+2023-07-31 22:55:44.342 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p16='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p17='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;
+SELECT @@ROWCOUNT;
+2023-07-31 22:55:44.399 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2023-07-31 22:55:44.402 +03:00 [INF] Executed action PetFood.Controllers.RoleController.AssignRoleToUser (PetFood) in 468.7322ms
+2023-07-31 22:55:44.405 +03:00 [INF] Executed endpoint 'PetFood.Controllers.RoleController.AssignRoleToUser (PetFood)'
+2023-07-31 22:55:44.410 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Role/assign?username=Stanislavych&roleName=User - 0 - 200 - application/json;+charset=utf-8 504.8242ms
+2023-07-31 22:55:49.825 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Role/assign?username=Stanislavych&roleName=Administrator - 0
+2023-07-31 22:55:49.829 +03:00 [INF] Executing endpoint 'PetFood.Controllers.RoleController.AssignRoleToUser (PetFood)'
+2023-07-31 22:55:49.837 +03:00 [INF] Route matched with {action = "AssignRoleToUser", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] AssignRoleToUser(System.String, System.String) on controller PetFood.Controllers.RoleController (PetFood).
+2023-07-31 22:55:49.844 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:55:49.857 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 22:55:49.862 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-07-31 22:55:49.868 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+2023-07-31 22:55:49.872 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-07-31 22:55:49.876 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 22:55:49.881 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-31 22:55:49.887 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+2023-07-31 22:55:49.895 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p16='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p17='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;
+SELECT @@ROWCOUNT;
+2023-07-31 22:55:49.898 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2023-07-31 22:55:49.900 +03:00 [INF] Executed action PetFood.Controllers.RoleController.AssignRoleToUser (PetFood) in 59.3447ms
+2023-07-31 22:55:49.901 +03:00 [INF] Executed endpoint 'PetFood.Controllers.RoleController.AssignRoleToUser (PetFood)'
+2023-07-31 22:55:49.902 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Role/assign?username=Stanislavych&roleName=Administrator - 0 - 200 - application/json;+charset=utf-8 77.3594ms
+2023-07-31 22:55:54.078 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/User - -
+2023-07-31 22:55:54.079 +03:00 [INF] Executing endpoint 'PetFood.Controllers.UserController.GetAllUsers (PetFood)'
+2023-07-31 22:55:54.080 +03:00 [INF] Route matched with {action = "GetAllUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.UserDto]]] GetAllUsers() on controller PetFood.Controllers.UserController (PetFood).
+2023-07-31 22:55:54.084 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:55:54.099 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2023-07-31 22:55:54.112 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-31 22:55:54.117 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-31 22:55:54.121 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-31 22:55:54.125 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.UserDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-31 22:55:54.127 +03:00 [INF] Executed action PetFood.Controllers.UserController.GetAllUsers (PetFood) in 43.8868ms
+2023-07-31 22:55:54.128 +03:00 [INF] Executed endpoint 'PetFood.Controllers.UserController.GetAllUsers (PetFood)'
+2023-07-31 22:55:54.129 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/User - - - 200 - application/json;+charset=utf-8 52.1672ms
+2023-07-31 22:56:12.375 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7256/api/User/User - -
+2023-07-31 22:56:12.377 +03:00 [INF] Executing endpoint 'PetFood.Controllers.UserController.DeleteUser (PetFood)'
+2023-07-31 22:56:12.380 +03:00 [INF] Route matched with {action = "DeleteUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteUser(System.String) on controller PetFood.Controllers.UserController (PetFood).
+2023-07-31 22:56:12.393 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:56:12.405 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 22:56:12.443 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [AspNetUsers]
+WHERE [Id] = @p0 AND [ConcurrencyStamp] = @p1;
+SELECT @@ROWCOUNT;
+2023-07-31 22:56:12.457 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2023-07-31 22:56:12.459 +03:00 [INF] Executed action PetFood.Controllers.UserController.DeleteUser (PetFood) in 77.1747ms
+2023-07-31 22:56:12.460 +03:00 [INF] Executed endpoint 'PetFood.Controllers.UserController.DeleteUser (PetFood)'
+2023-07-31 22:56:12.462 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7256/api/User/User - - - 200 - application/json;+charset=utf-8 86.4522ms
+2023-07-31 22:56:15.403 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/User - -
+2023-07-31 22:56:15.405 +03:00 [INF] Executing endpoint 'PetFood.Controllers.UserController.GetAllUsers (PetFood)'
+2023-07-31 22:56:15.407 +03:00 [INF] Route matched with {action = "GetAllUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.UserDto]]] GetAllUsers() on controller PetFood.Controllers.UserController (PetFood).
+2023-07-31 22:56:15.413 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:56:15.436 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2023-07-31 22:56:15.445 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-31 22:56:15.452 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-31 22:56:15.455 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.UserDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-31 22:56:15.457 +03:00 [INF] Executed action PetFood.Controllers.UserController.GetAllUsers (PetFood) in 45.1579ms
+2023-07-31 22:56:15.459 +03:00 [INF] Executed endpoint 'PetFood.Controllers.UserController.GetAllUsers (PetFood)'
+2023-07-31 22:56:15.460 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/User - - - 200 - application/json;+charset=utf-8 56.8238ms
+2023-07-31 22:56:33.405 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Role - -
+2023-07-31 22:56:33.414 +03:00 [INF] Executing endpoint 'PetFood.Controllers.RoleController.GetAllRoles (PetFood)'
+2023-07-31 22:56:33.421 +03:00 [INF] Route matched with {action = "GetAllRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]]] GetAllRoles() on controller PetFood.Controllers.RoleController (PetFood).
+2023-07-31 22:56:33.431 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:56:33.446 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [AspNetRoles] AS [a]
+2023-07-31 22:56:33.448 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-07-31 22:56:33.450 +03:00 [INF] Executed action PetFood.Controllers.RoleController.GetAllRoles (PetFood) in 22.3002ms
+2023-07-31 22:56:33.451 +03:00 [INF] Executed endpoint 'PetFood.Controllers.RoleController.GetAllRoles (PetFood)'
+2023-07-31 22:56:33.452 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Role - - - 200 - application/json;+charset=utf-8 46.8010ms
+2023-07-31 22:56:43.421 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Role/assign?username=Baraban&roleName=User - 0
+2023-07-31 22:56:43.422 +03:00 [INF] Executing endpoint 'PetFood.Controllers.RoleController.AssignRoleToUser (PetFood)'
+2023-07-31 22:56:43.424 +03:00 [INF] Route matched with {action = "AssignRoleToUser", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] AssignRoleToUser(System.String, System.String) on controller PetFood.Controllers.RoleController (PetFood).
+2023-07-31 22:56:43.427 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:56:43.438 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 22:56:43.445 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-07-31 22:56:43.452 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+2023-07-31 22:56:43.457 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2023-07-31 22:56:43.462 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-07-31 22:56:43.468 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-07-31 22:56:43.472 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+2023-07-31 22:56:43.479 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p16='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p17='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;
+SELECT @@ROWCOUNT;
+2023-07-31 22:56:43.482 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2023-07-31 22:56:43.484 +03:00 [INF] Executed action PetFood.Controllers.RoleController.AssignRoleToUser (PetFood) in 57.0862ms
+2023-07-31 22:56:43.485 +03:00 [INF] Executed endpoint 'PetFood.Controllers.RoleController.AssignRoleToUser (PetFood)'
+2023-07-31 22:56:43.486 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Role/assign?username=Baraban&roleName=User - 0 - 200 - application/json;+charset=utf-8 65.2851ms
+2023-07-31 22:56:46.789 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/User - -
+2023-07-31 22:56:46.791 +03:00 [INF] Executing endpoint 'PetFood.Controllers.UserController.GetAllUsers (PetFood)'
+2023-07-31 22:56:46.793 +03:00 [INF] Route matched with {action = "GetAllUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.UserDto]]] GetAllUsers() on controller PetFood.Controllers.UserController (PetFood).
+2023-07-31 22:56:46.795 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-07-31 22:56:46.802 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2023-07-31 22:56:46.808 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-31 22:56:46.811 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-07-31 22:56:46.814 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.UserDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-07-31 22:56:46.815 +03:00 [INF] Executed action PetFood.Controllers.UserController.GetAllUsers (PetFood) in 20.3621ms
+2023-07-31 22:56:46.816 +03:00 [INF] Executed endpoint 'PetFood.Controllers.UserController.GetAllUsers (PetFood)'
+2023-07-31 22:56:46.817 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/User - - - 200 - application/json;+charset=utf-8 38.1199ms

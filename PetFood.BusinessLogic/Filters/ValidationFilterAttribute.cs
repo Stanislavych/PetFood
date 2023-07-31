@@ -19,7 +19,7 @@ namespace PetFood.BusinessLogic.Filters
             var controller = context.RouteData.Values["controller"];
             var param = context.ActionArguments.SingleOrDefault(x => x.Value.ToString().Contains("Dto")).Value;
 
-            if (param != null)
+            if (param is null)
             {
                 _logger.LogError($"Object sent from client is null. Controller: {controller}, action: {action}");
 
