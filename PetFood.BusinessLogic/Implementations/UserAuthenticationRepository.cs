@@ -24,6 +24,11 @@ namespace PetFood.BusinessLogic.Implementations
             var user = _mapper.Map<User>(userRegistration);
             var result = await _userManager.CreateAsync(user, userRegistration.Password);
 
+            if (result.Succeeded)
+            {
+                await _userManager.AddToRoleAsync(user, "User");
+            }
+
             return result;
         }
 

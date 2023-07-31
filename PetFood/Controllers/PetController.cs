@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PetFood.BusinessLogic.Dto;
 using PetFood.BusinessLogic.Filters;
 using PetFood.BusinessLogic.Interfaces;
