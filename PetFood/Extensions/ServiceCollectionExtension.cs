@@ -78,6 +78,7 @@ namespace PetFood.Extensions
             services.AddScoped<IFoodItemRepository, FoodItemRepository>();
             services.AddScoped<IFoodTypeRepository, FoodTypeRepository>();
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IRoleService, RoleService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IPetService, PetService>();
             services.AddScoped<IFoodTypeService, FoodTypeService>();
