@@ -41,7 +41,7 @@ namespace PetFood.Controllers
         [HttpPost("assign")]
         public async Task<ActionResult<bool>> AssignRoleToUser(string username, string roleName)
         {
-            var result = await _roleService.AssignToleToUserAsync(username, roleName);
+            var result = await _roleService.AssignRoleToUserAsync(username, roleName);
 
             return Ok(result);
         }

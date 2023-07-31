@@ -16,7 +16,7 @@ namespace PetFood.BusinessLogic.Implementations
             _userManager = userManager;
         }
 
-        public async Task<bool> AssignToleToUserAsync(string username, string roleName)
+        public async Task<bool> AssignRoleToUserAsync(string username, string roleName)
         {
             var user = await _userManager.FindByNameAsync(username);
             
