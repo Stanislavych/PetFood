@@ -26,6 +26,7 @@ namespace PetFood.Controllers
 
         [HttpPost]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
+        [ServiceFilter(typeof(ValidateFoodItemAttribute))]
         public async Task<ActionResult<FoodItemDto>> CreateFoodItem([FromBody] FoodItemDto foodItemDto)
         {
             var newFoodItem = await _foodItemService.AddFoodItemAsync(foodItemDto);
@@ -35,6 +36,7 @@ namespace PetFood.Controllers
 
         [HttpPut]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
+        [ServiceFilter(typeof(ValidateFoodItemAttribute))]
         public async Task<ActionResult<FoodItemDto>> UpdateFoodItem([FromBody] FoodItemDto foodItemDto)
         {
             var updatedFoodItem = await _foodItemService.UpdateFoodItemAsync(foodItemDto);

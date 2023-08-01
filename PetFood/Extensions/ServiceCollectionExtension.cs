@@ -40,7 +40,7 @@ namespace PetFood.Extensions
                 var userRole = new IdentityRole("User");
                 roleManager.CreateAsync(userRole).Wait();
             }
-            
+
             if (!administratorRoleExist)
             {
                 var administratorRole = new IdentityRole("Administrator");
@@ -84,8 +84,14 @@ namespace PetFood.Extensions
             services.AddScoped<IPetService, PetService>();
             services.AddScoped<IFoodTypeService, FoodTypeService>();
             services.AddScoped<IFoodItemService, FoodItemService>();
+        }
+
+        public static void ConfigureFilters(this IServiceCollection services)
+        {
             services.AddScoped<Microsoft.Extensions.Logging.ILogger, Logger<ValidationFilterAttribute>>();
+            services.AddScoped<Microsoft.Extensions.Logging.ILogger, Logger<ValidateFoodItemAttribute>>();
             services.AddScoped<ValidationFilterAttribute>();
+            services.AddScoped<ValidateFoodItemAttribute>();
         }
 
         public static void ConfigureJWT(this IServiceCollection services, IConfiguration configuration)

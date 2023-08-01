@@ -8,6 +8,7 @@ builder.Services.AddControllers();
 builder.Services.RegisterDependencies();
 builder.Services.ConfigureMapping();
 builder.Services.ConfigureLogging();
+builder.Services.ConfigureFilters();
 
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager();
