@@ -19,35 +19,71 @@ namespace PetFood.BusinessLogic.Filters
 
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-            var foodItemDto = context.ActionArguments["foodItemDto"] as FoodItemDto;
-
-            if (foodItemDto != null)
+            if (context.ActionArguments.ContainsKey("foodItemDto"))
             {
-                var petExists = await _repositoryManager.Pet.FindByIdAsync(foodItemDto.PetId);
-                var foodTypeExists = await _repositoryManager.FoodType.FindByIdAsync(foodItemDto.FoodTypeId);
-
-                if (petExists is null)
+                var foodItemDto = context.ActionArguments["foodItemDto"] as FoodItemDto;
+                if (foodItemDto != null)
                 {
-                    _logger.LogError($"PetId sent from client is invalid: {foodItemDto.PetId}. Pet with this Id does not exist.");
-
-                    context.Result = new BadRequestObjectResult($"Invalid PetId: {foodItemDto.PetId}. Pet with this Id does not exist.");
-                    return;
+                    await ValidateFoodItemByPetId(foodItemDto.PetId, context);
+                    await ValidateFoodItemByFoodTypeId(foodItemDto.FoodTypeId, context);
+                    if (context.Result != null)
+                    {
+                        return;
+                    }
                 }
+            }
 
-                if (foodTypeExists is null)
+            if (context.ActionArguments.ContainsKey("petId"))
+            {
+                if (int.TryParse(context.ActionArguments["petId"].ToString(), out int petId))
                 {
-                    _logger.LogError($"FoodTypeId sent from client is invalid: {foodItemDto.FoodTypeId}. Food type with this Id does not exist.");
+                    await ValidateFoodItemByPetId(petId, context);
+                    if (context.Result != null)
+                    {
+                        return;
+                    }
+                }
+            }
 
-                    context.Result = new BadRequestObjectResult($"Invalid FoodTypeId: {foodItemDto.FoodTypeId}. FoodType with this Id does not exist.");
-                    return;
+            if (context.ActionArguments.ContainsKey("foodTypeId"))
+            {
+                if (int.TryParse(context.ActionArguments["foodTypeId"].ToString(), out int foodTypeId))
+                {
+                    await ValidateFoodItemByFoodTypeId(foodTypeId, context);
+                    if (context.Result != null)
+                    {
+                        return;
+                    }
                 }
             }
 
             await next();
         }
 
-        public void OnActionExecuted(ActionExecutedContext context)
+        private async Task ValidateFoodItemByPetId(int petId, ActionExecutingContext context)
         {
+            var petExists = await _repositoryManager.Pet.FindByIdAsync(petId);
+
+            if (petExists is null)
+            {
+                _logger.LogError($"PetId sent from client is invalid: {petId}. Pet with this Id does not exist.");
+
+                context.Result = new BadRequestObjectResult($"Invalid PetId: {petId}. Pet with this Id does not exist.");
+                return;
+            }
+        }
+
+        private async Task ValidateFoodItemByFoodTypeId(int foodTypeId, ActionExecutingContext context)
+        {
+            var foodTypeExists = await _repositoryManager.FoodType.FindByIdAsync(foodTypeId);
+
+            if (foodTypeExists is null)
+            {
+                _logger.LogError($"FoodTypeId sent from client is invalid: {foodTypeId}. Food type with this Id does not exist.");
+
+                context.Result = new BadRequestObjectResult($"Invalid FoodTypeId: {foodTypeId}. FoodType with this Id does not exist.");
+                return;
+            }
         }
     }
 }

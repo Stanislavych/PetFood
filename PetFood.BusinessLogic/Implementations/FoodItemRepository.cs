@@ -11,5 +11,20 @@ namespace PetFood.BusinessLogic.Implementations
         {
 
         }
+
+        public async Task<IEnumerable<FoodItem>> GetFoodItemByFoodType(int foodTypeId)
+        {
+            return await FindByConditionAsync(fi => fi.FoodTypeId == foodTypeId);
+        }
+
+        public async Task<IEnumerable<FoodItem>> GetFoodItemByPet(int petId)
+        {
+            return await FindByConditionAsync(fi => fi.PetId == petId);
+        }
+
+        public async Task<IEnumerable<FoodItem>> GetFoodItemByPetAndFoodType(int petId, int foodTypeId)
+        {
+            return await FindByConditionAsync(fi => fi.FoodTypeId == foodTypeId && fi.PetId == petId);
+        }
     }
 }

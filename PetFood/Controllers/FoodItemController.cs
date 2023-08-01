@@ -16,10 +16,37 @@ namespace PetFood.Controllers
             _foodItemService = foodItemService;
         }
 
-        [HttpGet]
+        [HttpGet("AllFoodItems")]
         public async Task<ActionResult<IEnumerable<FoodItemDto>>> GetAllFoodItems()
         {
             var foodItems = await _foodItemService.GetAllFoodItemsAsync();
+
+            return Ok(foodItems);
+        }
+
+        [HttpGet("GetByPetAndFoodType")]
+        [ServiceFilter(typeof(ValidateFoodItemAttribute))]
+        public async Task<ActionResult<IEnumerable<FoodItemDto>>> GetFoodItemsByPetAndFoodType(int petId, int foodTypeId)
+        {
+            var foodItems = await _foodItemService.GetFoodItemsByPetAndFoodType(petId, foodTypeId);
+
+            return Ok(foodItems);
+        }
+
+        [HttpGet("GetByPet")]
+        [ServiceFilter(typeof(ValidateFoodItemAttribute))]
+        public async Task<ActionResult<IEnumerable<FoodItemDto>>> GetFoodItemsByPet(int petId)
+        {
+            var foodItems = await _foodItemService.GetFoodItemsByPet(petId);
+
+            return Ok(foodItems);
+        }
+
+        [HttpGet("GetByFoodType")]
+        [ServiceFilter(typeof(ValidateFoodItemAttribute))]
+        public async Task<ActionResult<IEnumerable<FoodItemDto>>> GetFoodItemsByFoodType(int foodTypeId)
+        {
+            var foodItems = await _foodItemService.GetFoodItemsByFoodType(foodTypeId);
 
             return Ok(foodItems);
         }
