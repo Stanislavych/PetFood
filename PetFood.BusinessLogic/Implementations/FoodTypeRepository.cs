@@ -11,5 +11,12 @@ namespace PetFood.BusinessLogic.Implementations
         {
 
         }
+
+        public async Task<FoodType> FindByIdAsync(int id)
+        {
+            var foodType = await DatabaseContext.FoodTypes.FindAsync(id);
+
+            return foodType;
+        }
     }
 }

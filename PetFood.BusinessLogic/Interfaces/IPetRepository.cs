@@ -5,5 +5,6 @@ namespace PetFood.BusinessLogic.Interfaces
 {
     public interface IPetRepository : IRepositoryBase<Pet>
     {
+        Task<Pet> FindByIdAsync(int id);
     }
 }
