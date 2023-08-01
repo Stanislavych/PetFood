@@ -2252,3 +2252,635 @@ WHERE [f].[Id] = @__p_0
 2023-08-01 15:09:10.585 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.CreateFoodItem (PetFood) in 17.8346ms
 2023-08-01 15:09:10.587 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.CreateFoodItem (PetFood)'
 2023-08-01 15:09:10.588 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/FoodItem application/json 107 - 400 - text/plain;+charset=utf-8 44.9759ms
+2023-08-01 15:28:28.397 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:28:29.460 +03:00 [INF] Executed DbCommand (88ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-01 15:28:29.580 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-01 15:28:29.746 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 15:28:29.924 +03:00 [INF] Now listening on: https://localhost:7256
+2023-08-01 15:28:29.925 +03:00 [INF] Now listening on: http://localhost:5256
+2023-08-01 15:28:29.928 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 15:28:29.929 +03:00 [INF] Hosting environment: Development
+2023-08-01 15:28:29.930 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-08-01 15:28:30.739 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-08-01 15:28:31.387 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 660.2332ms
+2023-08-01 15:28:31.430 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 15:28:31.437 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 7.0861ms
+2023-08-01 15:28:31.542 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-08-01 15:28:31.707 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 166.1260ms
+2023-08-01 15:29:01.630 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem - -
+2023-08-01 15:29:01.641 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+PetFood.Controllers.FoodItemController.GetAllFoodItems (PetFood)
+PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-01 15:29:01.704 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem - - - 500 - text/plain;+charset=utf-8 73.7918ms
+2023-08-01 15:29:34.749 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:29:35.857 +03:00 [INF] Executed DbCommand (91ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-01 15:29:35.973 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-01 15:29:36.151 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 15:29:36.333 +03:00 [INF] Now listening on: https://localhost:7256
+2023-08-01 15:29:36.335 +03:00 [INF] Now listening on: http://localhost:5256
+2023-08-01 15:29:36.341 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 15:29:36.342 +03:00 [INF] Hosting environment: Development
+2023-08-01 15:29:36.343 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-08-01 15:29:37.220 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-08-01 15:29:37.571 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 356.0257ms
+2023-08-01 15:29:37.631 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 15:29:37.640 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 8.5320ms
+2023-08-01 15:29:37.763 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-08-01 15:29:37.912 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 148.3601ms
+2023-08-01 15:29:48.286 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=1 - -
+2023-08-01 15:29:48.405 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:29:48.455 +03:00 [INF] Route matched with {action = "GetFoodItemsByPetAndFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPetAndFoodType(Int32, Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 15:29:48.563 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood) in 99.0523ms
+2023-08-01 15:29:48.568 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:29:48.574 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: The given key 'foodItemDto' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at PetFood.BusinessLogic.Filters.ValidateFoodItemAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in D:\Программы\Visual Studio\VS Projects\PetFood\PetFood.BusinessLogic\Filters\ValidateFoodItemAttribute.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-01 15:29:48.646 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=1 - - - 500 - text/plain;+charset=utf-8 359.5688ms
+2023-08-01 15:30:02.081 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=10 - -
+2023-08-01 15:30:02.084 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:30:02.086 +03:00 [INF] Route matched with {action = "GetFoodItemsByPetAndFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPetAndFoodType(Int32, Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 15:30:02.123 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood) in 23.0936ms
+2023-08-01 15:30:02.125 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:30:02.128 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: The given key 'foodItemDto' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at PetFood.BusinessLogic.Filters.ValidateFoodItemAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in D:\Программы\Visual Studio\VS Projects\PetFood\PetFood.BusinessLogic\Filters\ValidateFoodItemAttribute.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-01 15:30:02.136 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=10 - - - 500 - text/plain;+charset=utf-8 54.4767ms
+2023-08-01 15:30:53.243 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=10 - -
+2023-08-01 15:30:53.251 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:30:53.263 +03:00 [INF] Route matched with {action = "GetFoodItemsByPetAndFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPetAndFoodType(Int32, Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 15:30:53.295 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood) in 28.5003ms
+2023-08-01 15:30:53.297 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:30:53.299 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: The given key 'foodItemDto' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at PetFood.BusinessLogic.Filters.ValidateFoodItemAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in D:\Программы\Visual Studio\VS Projects\PetFood\PetFood.BusinessLogic\Filters\ValidateFoodItemAttribute.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-01 15:30:53.310 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=10 - - - 500 - text/plain;+charset=utf-8 66.9499ms
+2023-08-01 15:31:56.253 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:31:57.358 +03:00 [INF] Executed DbCommand (93ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-01 15:31:57.471 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-01 15:31:57.639 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 15:31:57.811 +03:00 [INF] Now listening on: https://localhost:7256
+2023-08-01 15:31:57.812 +03:00 [INF] Now listening on: http://localhost:5256
+2023-08-01 15:31:57.815 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 15:31:57.816 +03:00 [INF] Hosting environment: Development
+2023-08-01 15:31:57.817 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-08-01 15:31:58.938 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-08-01 15:31:59.312 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 382.4313ms
+2023-08-01 15:31:59.359 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 15:31:59.365 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 6.6741ms
+2023-08-01 15:31:59.459 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-08-01 15:31:59.606 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 146.9860ms
+2023-08-01 15:32:06.127 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=1 - -
+2023-08-01 15:32:06.216 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:32:06.247 +03:00 [INF] Route matched with {action = "GetFoodItemsByPetAndFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPetAndFoodType(Int32, Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 15:32:06.344 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:32:06.420 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__foodTypeId_0='?' (DbType = Int32), @__petId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+WHERE ([f].[FoodTypeId] = @__foodTypeId_0) AND ([f].[PetId] = @__petId_1)
+2023-08-01 15:32:06.445 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 15:32:06.465 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood) in 207.7825ms
+2023-08-01 15:32:06.469 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:32:06.483 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=1 - - - 200 - application/json;+charset=utf-8 355.7748ms
+2023-08-01 15:32:11.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=2 - -
+2023-08-01 15:32:11.513 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:32:11.515 +03:00 [INF] Route matched with {action = "GetFoodItemsByPetAndFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPetAndFoodType(Int32, Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 15:32:11.532 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:32:11.538 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__foodTypeId_0='?' (DbType = Int32), @__petId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+WHERE ([f].[FoodTypeId] = @__foodTypeId_0) AND ([f].[PetId] = @__petId_1)
+2023-08-01 15:32:11.541 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 15:32:11.542 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood) in 24.1685ms
+2023-08-01 15:32:11.544 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:32:11.545 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=2 - - - 200 - application/json;+charset=utf-8 34.6459ms
+2023-08-01 15:32:14.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem?petId=2&foodTypeId=1 - -
+2023-08-01 15:32:14.862 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:32:14.864 +03:00 [INF] Route matched with {action = "GetFoodItemsByPetAndFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPetAndFoodType(Int32, Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 15:32:14.879 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:32:14.884 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__foodTypeId_0='?' (DbType = Int32), @__petId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+WHERE ([f].[FoodTypeId] = @__foodTypeId_0) AND ([f].[PetId] = @__petId_1)
+2023-08-01 15:32:14.886 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 15:32:14.888 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood) in 21.8119ms
+2023-08-01 15:32:14.890 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:32:14.891 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem?petId=2&foodTypeId=1 - - - 200 - application/json;+charset=utf-8 31.9565ms
+2023-08-01 15:32:16.313 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem?petId=2&foodTypeId=2 - -
+2023-08-01 15:32:16.315 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:32:16.316 +03:00 [INF] Route matched with {action = "GetFoodItemsByPetAndFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPetAndFoodType(Int32, Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 15:32:16.321 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:32:16.328 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__foodTypeId_0='?' (DbType = Int32), @__petId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+WHERE ([f].[FoodTypeId] = @__foodTypeId_0) AND ([f].[PetId] = @__petId_1)
+2023-08-01 15:32:16.332 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 15:32:16.334 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood) in 14.49ms
+2023-08-01 15:32:16.336 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:32:16.337 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem?petId=2&foodTypeId=2 - - - 200 - application/json;+charset=utf-8 23.5080ms
+2023-08-01 15:32:18.746 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=1 - -
+2023-08-01 15:32:18.748 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:32:18.751 +03:00 [INF] Route matched with {action = "GetFoodItemsByPetAndFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPetAndFoodType(Int32, Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 15:32:18.756 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:32:18.760 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__foodTypeId_0='?' (DbType = Int32), @__petId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+WHERE ([f].[FoodTypeId] = @__foodTypeId_0) AND ([f].[PetId] = @__petId_1)
+2023-08-01 15:32:18.763 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 15:32:18.764 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood) in 11.5926ms
+2023-08-01 15:32:18.766 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:32:18.767 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=1 - - - 200 - application/json;+charset=utf-8 21.1582ms
+2023-08-01 15:58:57.040 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:58:58.148 +03:00 [INF] Executed DbCommand (117ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-01 15:58:58.267 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-01 15:58:58.447 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 15:58:58.622 +03:00 [INF] Now listening on: https://localhost:7256
+2023-08-01 15:58:58.623 +03:00 [INF] Now listening on: http://localhost:5256
+2023-08-01 15:58:58.627 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 15:58:58.628 +03:00 [INF] Hosting environment: Development
+2023-08-01 15:58:58.629 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-08-01 15:58:59.393 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-08-01 15:58:59.777 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 393.2538ms
+2023-08-01 15:58:59.824 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 15:58:59.833 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 8.3430ms
+2023-08-01 15:58:59.933 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-08-01 15:59:00.099 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 166.0446ms
+2023-08-01 15:59:06.497 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/FoodItem application/json 107
+2023-08-01 15:59:06.582 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.CreateFoodItem (PetFood)'
+2023-08-01 15:59:06.613 +03:00 [INF] Route matched with {action = "CreateFoodItem", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PetFood.BusinessLogic.Dto.FoodItemDto]] CreateFoodItem(PetFood.BusinessLogic.Dto.FoodItemDto) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 15:59:06.711 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:59:06.751 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 15:59:06.755 +03:00 [ERR] PetId sent from client is invalid: 0. Pet with this Id does not exist.
+2023-08-01 15:59:06.766 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+WHERE [f].[Id] = @__p_0
+2023-08-01 15:59:06.782 +03:00 [ERR] FoodTypeId sent from client is invalid: 0. Food type with this Id does not exist.
+2023-08-01 15:59:06.793 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-08-01 15:59:06.807 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.CreateFoodItem (PetFood) in 178.4165ms
+2023-08-01 15:59:06.813 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.CreateFoodItem (PetFood)'
+2023-08-01 15:59:06.828 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/FoodItem application/json 107 - 400 - text/plain;+charset=utf-8 330.6157ms
+2023-08-01 15:59:12.711 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/FoodItem application/json 108
+2023-08-01 15:59:12.713 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.CreateFoodItem (PetFood)'
+2023-08-01 15:59:12.716 +03:00 [INF] Route matched with {action = "CreateFoodItem", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PetFood.BusinessLogic.Dto.FoodItemDto]] CreateFoodItem(PetFood.BusinessLogic.Dto.FoodItemDto) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 15:59:12.736 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:59:12.743 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 15:59:12.745 +03:00 [ERR] PetId sent from client is invalid: 10. Pet with this Id does not exist.
+2023-08-01 15:59:12.749 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+WHERE [f].[Id] = @__p_0
+2023-08-01 15:59:12.752 +03:00 [ERR] FoodTypeId sent from client is invalid: 0. Food type with this Id does not exist.
+2023-08-01 15:59:12.753 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-08-01 15:59:12.755 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.CreateFoodItem (PetFood) in 30.6819ms
+2023-08-01 15:59:12.756 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.CreateFoodItem (PetFood)'
+2023-08-01 15:59:12.757 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/FoodItem application/json 108 - 400 - text/plain;+charset=utf-8 46.3759ms
+2023-08-01 15:59:17.396 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7256/api/FoodItem application/json 109
+2023-08-01 15:59:17.402 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.CreateFoodItem (PetFood)'
+2023-08-01 15:59:17.414 +03:00 [INF] Route matched with {action = "CreateFoodItem", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[PetFood.BusinessLogic.Dto.FoodItemDto]] CreateFoodItem(PetFood.BusinessLogic.Dto.FoodItemDto) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 15:59:17.419 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:59:17.424 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 15:59:17.426 +03:00 [ERR] PetId sent from client is invalid: 10. Pet with this Id does not exist.
+2023-08-01 15:59:17.429 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+WHERE [f].[Id] = @__p_0
+2023-08-01 15:59:17.432 +03:00 [ERR] FoodTypeId sent from client is invalid: 10. Food type with this Id does not exist.
+2023-08-01 15:59:17.433 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-08-01 15:59:17.434 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.CreateFoodItem (PetFood) in 17.0137ms
+2023-08-01 15:59:17.435 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.CreateFoodItem (PetFood)'
+2023-08-01 15:59:17.436 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7256/api/FoodItem application/json 109 - 400 - text/plain;+charset=utf-8 40.9155ms
+2023-08-01 15:59:30.632 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem?petId=10&foodTypeId=10 - -
+2023-08-01 15:59:30.634 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:59:30.640 +03:00 [INF] Route matched with {action = "GetFoodItemsByPetAndFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPetAndFoodType(Int32, Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 15:59:30.649 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:59:30.654 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 15:59:30.656 +03:00 [ERR] PetId sent from client is invalid: 10. Pet with this Id does not exist.
+2023-08-01 15:59:30.658 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-08-01 15:59:30.659 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood) in 15.6201ms
+2023-08-01 15:59:30.660 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:59:30.661 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem?petId=10&foodTypeId=10 - - - 400 - text/plain;+charset=utf-8 28.8539ms
+2023-08-01 15:59:36.127 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=10 - -
+2023-08-01 15:59:36.131 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:59:36.132 +03:00 [INF] Route matched with {action = "GetFoodItemsByPetAndFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPetAndFoodType(Int32, Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 15:59:36.135 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:59:36.141 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 15:59:36.173 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+WHERE [f].[Id] = @__p_0
+2023-08-01 15:59:36.177 +03:00 [ERR] FoodTypeId sent from client is invalid: 10. Food type with this Id does not exist.
+2023-08-01 15:59:36.178 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-08-01 15:59:36.179 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood) in 44.1778ms
+2023-08-01 15:59:36.180 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:59:36.181 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=10 - - - 400 - text/plain;+charset=utf-8 55.0132ms
+2023-08-01 15:59:39.051 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=1 - -
+2023-08-01 15:59:39.054 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:59:39.056 +03:00 [INF] Route matched with {action = "GetFoodItemsByPetAndFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPetAndFoodType(Int32, Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 15:59:39.059 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 15:59:39.064 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 15:59:39.068 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+WHERE [f].[Id] = @__p_0
+2023-08-01 15:59:39.157 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__foodTypeId_0='?' (DbType = Int32), @__petId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+WHERE ([f].[FoodTypeId] = @__foodTypeId_0) AND ([f].[PetId] = @__petId_1)
+2023-08-01 15:59:39.169 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 15:59:39.175 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood) in 116.6162ms
+2023-08-01 15:59:39.177 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 15:59:39.178 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem?petId=1&foodTypeId=1 - - - 200 - application/json;+charset=utf-8 126.9066ms
+2023-08-01 16:06:01.010 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:06:02.105 +03:00 [INF] Executed DbCommand (90ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-01 16:06:02.216 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-01 16:06:02.393 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 16:06:02.562 +03:00 [INF] Now listening on: https://localhost:7256
+2023-08-01 16:06:02.564 +03:00 [INF] Now listening on: http://localhost:5256
+2023-08-01 16:06:02.567 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 16:06:02.568 +03:00 [INF] Hosting environment: Development
+2023-08-01 16:06:02.569 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-08-01 16:06:03.424 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-08-01 16:06:04.228 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 815.3268ms
+2023-08-01 16:06:04.275 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 16:06:04.282 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 5.9817ms
+2023-08-01 16:06:04.383 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-08-01 16:06:04.507 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.4112ms
+2023-08-01 16:06:37.237 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:06:38.405 +03:00 [INF] Executed DbCommand (114ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-01 16:06:38.522 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-01 16:06:38.683 +03:00 [INF] User profile is available. Using 'C:\Users\stasi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 16:06:38.846 +03:00 [INF] Now listening on: https://localhost:7256
+2023-08-01 16:06:38.847 +03:00 [INF] Now listening on: http://localhost:5256
+2023-08-01 16:06:38.851 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 16:06:38.852 +03:00 [INF] Hosting environment: Development
+2023-08-01 16:06:38.853 +03:00 [INF] Content root path: D:\Программы\Visual Studio\VS Projects\PetFood\PetFood\
+2023-08-01 16:06:39.517 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - -
+2023-08-01 16:06:39.898 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - - - 200 - text/html;charset=utf-8 388.9833ms
+2023-08-01 16:06:39.949 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 16:06:39.956 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - - - 200 11972 application/javascript;+charset=utf-8 7.0804ms
+2023-08-01 16:06:40.045 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+2023-08-01 16:06:40.215 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 169.5819ms
+2023-08-01 16:06:55.081 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/AllFoodItems - -
+2023-08-01 16:06:55.181 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetAllFoodItems (PetFood)'
+2023-08-01 16:06:55.196 +03:00 [INF] Route matched with {action = "GetAllFoodItems", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetAllFoodItems() on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:06:55.257 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:06:55.325 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+2023-08-01 16:06:55.349 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 16:06:55.364 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetAllFoodItems (PetFood) in 156.9472ms
+2023-08-01 16:06:55.367 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetAllFoodItems (PetFood)'
+2023-08-01 16:06:55.379 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/AllFoodItems - - - 200 - application/json;+charset=utf-8 298.5185ms
+2023-08-01 16:07:03.421 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPetAndFoodType?petId=14&foodTypeId=14 - -
+2023-08-01 16:07:03.428 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 16:07:03.470 +03:00 [INF] Route matched with {action = "GetFoodItemsByPetAndFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPetAndFoodType(Int32, Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:07:03.516 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:07:03.555 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 16:07:03.558 +03:00 [ERR] PetId sent from client is invalid: 14. Pet with this Id does not exist.
+2023-08-01 16:07:03.560 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-08-01 16:07:03.562 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood) in 88.4905ms
+2023-08-01 16:07:03.563 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 16:07:03.564 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPetAndFoodType?petId=14&foodTypeId=14 - - - 400 - text/plain;+charset=utf-8 143.3626ms
+2023-08-01 16:07:07.228 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPetAndFoodType?petId=1&foodTypeId=14 - -
+2023-08-01 16:07:07.242 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 16:07:07.246 +03:00 [INF] Route matched with {action = "GetFoodItemsByPetAndFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPetAndFoodType(Int32, Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:07:07.249 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:07:07.255 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 16:07:07.290 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+WHERE [f].[Id] = @__p_0
+2023-08-01 16:07:07.294 +03:00 [ERR] FoodTypeId sent from client is invalid: 14. Food type with this Id does not exist.
+2023-08-01 16:07:07.296 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-08-01 16:07:07.297 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood) in 49.1204ms
+2023-08-01 16:07:07.298 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 16:07:07.299 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPetAndFoodType?petId=1&foodTypeId=14 - - - 400 - text/plain;+charset=utf-8 70.7868ms
+2023-08-01 16:07:09.495 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPetAndFoodType?petId=1&foodTypeId=1 - -
+2023-08-01 16:07:09.497 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 16:07:09.509 +03:00 [INF] Route matched with {action = "GetFoodItemsByPetAndFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPetAndFoodType(Int32, Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:07:09.514 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:07:09.519 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 16:07:09.525 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+WHERE [f].[Id] = @__p_0
+2023-08-01 16:07:09.558 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__foodTypeId_0='?' (DbType = Int32), @__petId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+WHERE ([f].[FoodTypeId] = @__foodTypeId_0) AND ([f].[PetId] = @__petId_1)
+2023-08-01 16:07:09.564 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 16:07:09.567 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood) in 53.276ms
+2023-08-01 16:07:09.568 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPetAndFoodType (PetFood)'
+2023-08-01 16:07:09.570 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPetAndFoodType?petId=1&foodTypeId=1 - - - 200 - application/json;+charset=utf-8 74.0280ms
+2023-08-01 16:07:15.589 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPet?petId=0 - -
+2023-08-01 16:07:15.591 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood)'
+2023-08-01 16:07:15.595 +03:00 [INF] Route matched with {action = "GetFoodItemsByPet", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPet(Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:07:15.598 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:07:15.603 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 16:07:15.606 +03:00 [ERR] PetId sent from client is invalid: 0. Pet with this Id does not exist.
+2023-08-01 16:07:15.606 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-08-01 16:07:15.607 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood) in 10.28ms
+2023-08-01 16:07:15.609 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood)'
+2023-08-01 16:07:15.610 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPet?petId=0 - - - 400 - text/plain;+charset=utf-8 20.8979ms
+2023-08-01 16:07:19.754 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPet?petId=-1 - -
+2023-08-01 16:07:19.756 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood)'
+2023-08-01 16:07:19.757 +03:00 [INF] Route matched with {action = "GetFoodItemsByPet", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPet(Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:07:19.761 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:07:19.767 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 16:07:19.773 +03:00 [ERR] PetId sent from client is invalid: -1. Pet with this Id does not exist.
+2023-08-01 16:07:19.774 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-08-01 16:07:19.777 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood) in 15.7942ms
+2023-08-01 16:07:19.778 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood)'
+2023-08-01 16:07:19.780 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPet?petId=-1 - - - 400 - text/plain;+charset=utf-8 26.3424ms
+2023-08-01 16:07:23.633 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPet?petId=2 - -
+2023-08-01 16:07:23.635 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood)'
+2023-08-01 16:07:23.636 +03:00 [INF] Route matched with {action = "GetFoodItemsByPet", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPet(Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:07:23.640 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:07:23.646 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 16:07:23.659 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__petId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+WHERE [f].[PetId] = @__petId_0
+2023-08-01 16:07:23.662 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 16:07:23.665 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood) in 25.5225ms
+2023-08-01 16:07:23.666 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood)'
+2023-08-01 16:07:23.668 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPet?petId=2 - - - 200 - application/json;+charset=utf-8 35.1098ms
+2023-08-01 16:07:52.654 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPet?petId=3 - -
+2023-08-01 16:07:52.656 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood)'
+2023-08-01 16:07:52.657 +03:00 [INF] Route matched with {action = "GetFoodItemsByPet", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPet(Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:07:52.660 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:07:52.664 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 16:07:52.666 +03:00 [ERR] PetId sent from client is invalid: 3. Pet with this Id does not exist.
+2023-08-01 16:07:52.667 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-08-01 16:07:52.668 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood) in 9.3878ms
+2023-08-01 16:07:52.670 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood)'
+2023-08-01 16:07:52.671 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPet?petId=3 - - - 400 - text/plain;+charset=utf-8 17.7461ms
+2023-08-01 16:08:01.001 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPet?petId=3 - -
+2023-08-01 16:08:01.003 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood)'
+2023-08-01 16:08:01.006 +03:00 [INF] Route matched with {action = "GetFoodItemsByPet", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPet(Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:08:01.012 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:08:01.018 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 16:08:01.020 +03:00 [ERR] PetId sent from client is invalid: 3. Pet with this Id does not exist.
+2023-08-01 16:08:01.021 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-08-01 16:08:01.023 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood) in 11.3429ms
+2023-08-01 16:08:01.024 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood)'
+2023-08-01 16:08:01.025 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPet?petId=3 - - - 400 - text/plain;+charset=utf-8 23.9901ms
+2023-08-01 16:08:02.589 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPet?petId=2 - -
+2023-08-01 16:08:02.590 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood)'
+2023-08-01 16:08:02.592 +03:00 [INF] Route matched with {action = "GetFoodItemsByPet", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPet(Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:08:02.594 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:08:02.599 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 16:08:02.604 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__petId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+WHERE [f].[PetId] = @__petId_0
+2023-08-01 16:08:02.606 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 16:08:02.608 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood) in 13.6386ms
+2023-08-01 16:08:02.609 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood)'
+2023-08-01 16:08:02.610 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPet?petId=2 - - - 200 - application/json;+charset=utf-8 21.4696ms
+2023-08-01 16:08:04.231 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPet?petId=1 - -
+2023-08-01 16:08:04.233 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood)'
+2023-08-01 16:08:04.236 +03:00 [INF] Route matched with {action = "GetFoodItemsByPet", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByPet(Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:08:04.239 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:08:04.244 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name]
+FROM [Pets] AS [p]
+WHERE [p].[Id] = @__p_0
+2023-08-01 16:08:04.250 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__petId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+WHERE [f].[PetId] = @__petId_0
+2023-08-01 16:08:04.252 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 16:08:04.253 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood) in 15.1771ms
+2023-08-01 16:08:04.255 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByPet (PetFood)'
+2023-08-01 16:08:04.256 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByPet?petId=1 - - - 200 - application/json;+charset=utf-8 24.9200ms
+2023-08-01 16:08:13.584 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByFoodType?foodTypeId=3 - -
+2023-08-01 16:08:13.586 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood)'
+2023-08-01 16:08:13.592 +03:00 [INF] Route matched with {action = "GetFoodItemsByFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByFoodType(Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:08:13.597 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:08:13.603 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+WHERE [f].[Id] = @__p_0
+2023-08-01 16:08:13.613 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__foodTypeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+WHERE [f].[FoodTypeId] = @__foodTypeId_0
+2023-08-01 16:08:13.618 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 16:08:13.619 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood) in 22.6872ms
+2023-08-01 16:08:13.621 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood)'
+2023-08-01 16:08:13.622 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByFoodType?foodTypeId=3 - - - 200 - application/json;+charset=utf-8 37.7320ms
+2023-08-01 16:08:16.451 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByFoodType?foodTypeId=2 - -
+2023-08-01 16:08:16.452 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood)'
+2023-08-01 16:08:16.454 +03:00 [INF] Route matched with {action = "GetFoodItemsByFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByFoodType(Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:08:16.457 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:08:16.464 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+WHERE [f].[Id] = @__p_0
+2023-08-01 16:08:16.466 +03:00 [ERR] FoodTypeId sent from client is invalid: 2. Food type with this Id does not exist.
+2023-08-01 16:08:16.467 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-08-01 16:08:16.470 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood) in 12.5892ms
+2023-08-01 16:08:16.471 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood)'
+2023-08-01 16:08:16.473 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByFoodType?foodTypeId=2 - - - 400 - text/plain;+charset=utf-8 21.6968ms
+2023-08-01 16:08:18.537 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByFoodType?foodTypeId=1 - -
+2023-08-01 16:08:18.538 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood)'
+2023-08-01 16:08:18.539 +03:00 [INF] Route matched with {action = "GetFoodItemsByFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByFoodType(Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:08:18.542 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:08:18.548 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+WHERE [f].[Id] = @__p_0
+2023-08-01 16:08:18.553 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__foodTypeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+WHERE [f].[FoodTypeId] = @__foodTypeId_0
+2023-08-01 16:08:18.555 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 16:08:18.557 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood) in 15.0914ms
+2023-08-01 16:08:18.558 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood)'
+2023-08-01 16:08:18.559 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByFoodType?foodTypeId=1 - - - 200 - application/json;+charset=utf-8 22.5262ms
+2023-08-01 16:08:20.981 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByFoodType?foodTypeId=4 - -
+2023-08-01 16:08:20.983 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood)'
+2023-08-01 16:08:20.985 +03:00 [INF] Route matched with {action = "GetFoodItemsByFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByFoodType(Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:08:20.990 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:08:21.002 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+WHERE [f].[Id] = @__p_0
+2023-08-01 16:08:21.005 +03:00 [ERR] FoodTypeId sent from client is invalid: 4. Food type with this Id does not exist.
+2023-08-01 16:08:21.006 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-08-01 16:08:21.007 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood) in 17.4864ms
+2023-08-01 16:08:21.008 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood)'
+2023-08-01 16:08:21.009 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByFoodType?foodTypeId=4 - - - 400 - text/plain;+charset=utf-8 28.3019ms
+2023-08-01 16:08:23.418 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/GetByFoodType?foodTypeId=3 - -
+2023-08-01 16:08:23.419 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood)'
+2023-08-01 16:08:23.421 +03:00 [INF] Route matched with {action = "GetFoodItemsByFoodType", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetFoodItemsByFoodType(Int32) on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:08:23.423 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:08:23.430 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+WHERE [f].[Id] = @__p_0
+2023-08-01 16:08:23.435 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__foodTypeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+WHERE [f].[FoodTypeId] = @__foodTypeId_0
+2023-08-01 16:08:23.437 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 16:08:23.438 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood) in 14.7792ms
+2023-08-01 16:08:23.439 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetFoodItemsByFoodType (PetFood)'
+2023-08-01 16:08:23.440 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/GetByFoodType?foodTypeId=3 - - - 200 - application/json;+charset=utf-8 22.8531ms
+2023-08-01 16:08:52.805 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodType - -
+2023-08-01 16:08:52.809 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodTypeController.GetAllFoodTypes (PetFood)'
+2023-08-01 16:08:52.814 +03:00 [INF] Route matched with {action = "GetAllFoodTypes", controller = "FoodType"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodTypeDto]]] GetAllFoodTypes() on controller PetFood.Controllers.FoodTypeController (PetFood).
+2023-08-01 16:08:52.819 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:08:52.829 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[Name], [f].[PetId]
+FROM [FoodTypes] AS [f]
+2023-08-01 16:08:52.832 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodTypeDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 16:08:52.835 +03:00 [INF] Executed action PetFood.Controllers.FoodTypeController.GetAllFoodTypes (PetFood) in 17.9989ms
+2023-08-01 16:08:52.836 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodTypeController.GetAllFoodTypes (PetFood)'
+2023-08-01 16:08:52.837 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodType - - - 200 - application/json;+charset=utf-8 32.5767ms
+2023-08-01 16:08:59.584 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7256/api/FoodItem/AllFoodItems - -
+2023-08-01 16:08:59.586 +03:00 [INF] Executing endpoint 'PetFood.Controllers.FoodItemController.GetAllFoodItems (PetFood)'
+2023-08-01 16:08:59.589 +03:00 [INF] Route matched with {action = "GetAllFoodItems", controller = "FoodItem"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PetFood.BusinessLogic.Dto.FoodItemDto]]] GetAllFoodItems() on controller PetFood.Controllers.FoodItemController (PetFood).
+2023-08-01 16:08:59.594 +03:00 [INF] Entity Framework Core 6.0.20 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.20' with options: MigrationsAssembly=PetFood 
+2023-08-01 16:08:59.598 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Id], [f].[Description], [f].[FoodTypeId], [f].[Name], [f].[PetId], [f].[Price]
+FROM [FoodItems] AS [f]
+2023-08-01 16:08:59.601 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PetFood.BusinessLogic.Dto.FoodItemDto, PetFood.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 16:08:59.603 +03:00 [INF] Executed action PetFood.Controllers.FoodItemController.GetAllFoodItems (PetFood) in 11.5238ms
+2023-08-01 16:08:59.605 +03:00 [INF] Executed endpoint 'PetFood.Controllers.FoodItemController.GetAllFoodItems (PetFood)'
+2023-08-01 16:08:59.605 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7256/api/FoodItem/AllFoodItems - - - 200 - application/json;+charset=utf-8 21.2750ms

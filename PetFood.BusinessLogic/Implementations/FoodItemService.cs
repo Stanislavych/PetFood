@@ -69,5 +69,29 @@ namespace PetFood.BusinessLogic.Implementations
 
             return updatedFoodItemDto;
         }
+
+        public async Task<IEnumerable<FoodItemDto>> GetFoodItemsByPetAndFoodType(int petId,int foodTypeId)
+        {
+            var foodItems = await _repositoryManager.FoodItem.GetFoodItemByPetAndFoodType(petId, foodTypeId);
+            var foodItemsDto = _mapper.Map<IEnumerable<FoodItemDto>>(foodItems);
+
+            return foodItemsDto;
+        }
+
+        public async Task<IEnumerable<FoodItemDto>> GetFoodItemsByPet(int petId)
+        {
+            var foodItems = await _repositoryManager.FoodItem.GetFoodItemByPet(petId);
+            var foodItemsDto = _mapper.Map<IEnumerable<FoodItemDto>>(foodItems);
+
+            return foodItemsDto;
+        }
+
+        public async Task<IEnumerable<FoodItemDto>> GetFoodItemsByFoodType(int foodTypeId)
+        {
+            var foodItems = await _repositoryManager.FoodItem.GetFoodItemByFoodType(foodTypeId);
+            var foodItemsDto = _mapper.Map<IEnumerable<FoodItemDto>>(foodItems);
+
+            return foodItemsDto;
+        }
     }
 }
