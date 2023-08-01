@@ -26,7 +26,7 @@ namespace PetFood.Controllers
 
         [HttpPost]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
-        public async Task<ActionResult<FoodItemDto>> CreateFoodItem(FoodItemDto foodItemDto)
+        public async Task<ActionResult<FoodItemDto>> CreateFoodItem([FromBody] FoodItemDto foodItemDto)
         {
             var newFoodItem = await _foodItemService.AddFoodItemAsync(foodItemDto);
 
@@ -35,7 +35,7 @@ namespace PetFood.Controllers
 
         [HttpPut]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
-        public async Task<ActionResult<FoodItemDto>> UpdateFoodItem (FoodItemDto foodItemDto)
+        public async Task<ActionResult<FoodItemDto>> UpdateFoodItem([FromBody] FoodItemDto foodItemDto)
         {
             var updatedFoodItem = await _foodItemService.UpdateFoodItemAsync(foodItemDto);
 
@@ -43,11 +43,11 @@ namespace PetFood.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<int>> DeleteFoodItem(int id)
+        public async Task<ActionResult<bool>> DeleteFoodItem(int id)
         {
-            await _foodItemService.DeleteFoodItemAsync(id);
+            var result = await _foodItemService.DeleteFoodItemAsync(id);
 
-            return Ok("Food item with id - " + id + " was deleted");
+            return Ok(result);
         }
     }
 }

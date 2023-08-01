@@ -19,10 +19,10 @@ namespace PetFood.BusinessLogic.Implementations
         public async Task<bool> AssignRoleToUserAsync(string username, string roleName)
         {
             var user = await _userManager.FindByNameAsync(username);
-            
+
             if (user == null)
             {
-                return false;
+                throw new ArgumentException("User not found");
             }
 
             var result = await _userManager.AddToRoleAsync(user, roleName);
@@ -36,7 +36,7 @@ namespace PetFood.BusinessLogic.Implementations
 
             if (roleExist)
             {
-                return false;
+                throw new ArgumentException("Role already exist");
             }
 
             var newRole = new IdentityRole(roleName);
@@ -49,9 +49,9 @@ namespace PetFood.BusinessLogic.Implementations
         {
             var role = await _roleManager.FindByNameAsync(roleName);
 
-            if (role==null)
+            if (role == null)
             {
-                return false;
+                throw new ArgumentException("Role not found");
             }
 
             var result = await _roleManager.DeleteAsync(role);
@@ -64,6 +64,20 @@ namespace PetFood.BusinessLogic.Implementations
             var roles = await _roleManager.Roles.Select(r => r.Name).ToListAsync();
 
             return roles;
+        }
+
+        public async Task<bool> RevokeRoleFromUserAsync(string username, string roleName)
+        {
+            var user = await _userManager.FindByNameAsync(username);
+
+            if (user == null)
+            {
+                throw new ArgumentException("User not found");
+            }
+
+            var result = await _userManager.RemoveFromRoleAsync(user, roleName);
+
+            return result.Succeeded;
         }
     }
 }

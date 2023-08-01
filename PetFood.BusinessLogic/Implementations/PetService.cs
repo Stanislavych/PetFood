@@ -34,7 +34,7 @@ namespace PetFood.BusinessLogic.Implementations
 
             if (existingPet == null)
             {
-                return false;
+                throw new ArgumentException("Pet not found");
             }
 
             await _repositoryManager.Pet.RemoveAsync(existingPet);
@@ -57,7 +57,7 @@ namespace PetFood.BusinessLogic.Implementations
 
             if (existingPet==null)
             {
-                throw new ArgumentNullException("Pet not found");
+                throw new ArgumentException("Pet not found");
             }
 
             var updatedPet = _mapper.Map<Pet>(petDto);

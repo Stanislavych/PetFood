@@ -7,6 +7,7 @@ namespace PetFood.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [ServiceFilter(typeof(ValidationFilterAttribute))]
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;
@@ -19,7 +20,6 @@ namespace PetFood.Controllers
         }
 
         [HttpPost("register")]
-        [ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<IActionResult> RegisterUser([FromBody] UserRegistrationDto userRegistration)
         {
             var userResult = await _authService.RegisterUserAsync(userRegistration);
@@ -28,7 +28,6 @@ namespace PetFood.Controllers
         }
 
         [HttpPost("login")]
-        [ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<IActionResult> LoginUser([FromBody] UserLoginDto userLogin)
         {
             return !await _authService.ValidateUserAsync(userLogin) ? Unauthorized() : Ok(new { Token = await _tokenService.CreateTokenAsync(userLogin) });

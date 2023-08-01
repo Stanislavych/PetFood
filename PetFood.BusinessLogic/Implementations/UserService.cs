@@ -23,7 +23,7 @@ namespace PetFood.BusinessLogic.Implementations
 
             if (existingUser==null)
             {
-                return false;
+                throw new ArgumentException("User item not found");
             }
 
             var result = await _userManager.DeleteAsync(existingUser);

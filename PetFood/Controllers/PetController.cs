@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PetFood.BusinessLogic.Dto;
 using PetFood.BusinessLogic.Filters;
 using PetFood.BusinessLogic.Interfaces;
@@ -27,7 +26,7 @@ namespace PetFood.Controllers
 
         [HttpPost]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
-        public async Task<ActionResult<PetDto>> CreatePet(PetDto petDto)
+        public async Task<ActionResult<PetDto>> CreatePet([FromBody] PetDto petDto)
         {
             var newPet = await _petService.AddPetAsync(petDto);
 
@@ -36,7 +35,7 @@ namespace PetFood.Controllers
 
         [HttpPut]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
-        public async Task<ActionResult<PetDto>> UpdatePet(PetDto petDto)
+        public async Task<ActionResult<PetDto>> UpdatePet([FromBody] PetDto petDto)
         {
             var updatedPet = await _petService.UpdatePetAsync(petDto);
 
@@ -46,9 +45,9 @@ namespace PetFood.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult<int>> DeletePet(int id)
         {
-            await _petService.DeletePetAsync(id);
-            
-            return Ok("Pet with id - " + id + " was deleted");
+            var result = await _petService.DeletePetAsync(id);
+
+            return Ok(result);
         }
     }
 }
