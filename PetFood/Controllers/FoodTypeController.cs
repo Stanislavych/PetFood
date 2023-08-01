@@ -26,7 +26,7 @@ namespace PetFood.Controllers
 
         [HttpPost]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
-        public async Task<ActionResult<FoodTypeDto>> CreateFoodType(FoodTypeDto foodTypeDto)
+        public async Task<ActionResult<FoodTypeDto>> CreateFoodType([FromBody] FoodTypeDto foodTypeDto)
         {
             var newFoodType = await _foodTypeService.AddFoodTypeAsync(foodTypeDto);
 
@@ -35,7 +35,7 @@ namespace PetFood.Controllers
 
         [HttpPut]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
-        public async Task<ActionResult<FoodTypeDto>> UpdateFoodType(FoodTypeDto foodTypeDto)
+        public async Task<ActionResult<FoodTypeDto>> UpdateFoodType([FromBody] FoodTypeDto foodTypeDto)
         {
             var updatedFoodType = await _foodTypeService.UpdateFoodTypeAsync(foodTypeDto);
 
@@ -43,11 +43,11 @@ namespace PetFood.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<int>> DeleteFoodType(int id)
+        public async Task<ActionResult<bool>> DeleteFoodType(int id)
         {
-            await _foodTypeService.DeleteFoodTypeAsync(id);
+            var result = await _foodTypeService.DeleteFoodTypeAsync(id);
 
-            return Ok("Food type with id - " + id + " was deleted");
+            return Ok(result);
         }
     }
 }

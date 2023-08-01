@@ -45,5 +45,13 @@ namespace PetFood.Controllers
 
             return Ok(result);
         }
+
+        [HttpPost("revoke")]
+        public async Task<ActionResult<bool>> RevokeRoleFromUser(string username, string roleName)
+        {
+            var result = await _roleService.RevokeRoleFromUserAsync(username, roleName);
+
+            return Ok(result);
+        }
     }
 }

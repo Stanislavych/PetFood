@@ -34,7 +34,7 @@ namespace PetFood.BusinessLogic.Implementations
 
             if (existingFoodType==null)
             {
-                return false;
+                throw new ArgumentException("Food type not found");
             }
 
             await _repositoryManager.FoodType.RemoveAsync(existingFoodType);
@@ -57,7 +57,7 @@ namespace PetFood.BusinessLogic.Implementations
 
             if (existingFoodType == null)
             {
-                throw new ArgumentNullException("Food type not found");
+                throw new ArgumentException("Food type not found");
             }
 
             var updatedFoodType = _mapper.Map<FoodType>(foodTypeDto);
