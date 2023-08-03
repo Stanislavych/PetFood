@@ -22,10 +22,12 @@ namespace PetFood.BusinessLogic.Filters
             if (context.ActionArguments.ContainsKey("foodItemDto"))
             {
                 var foodItemDto = context.ActionArguments["foodItemDto"] as FoodItemDto;
+
                 if (foodItemDto != null)
                 {
                     await ValidateFoodItemByPetId(foodItemDto.PetId, context);
                     await ValidateFoodItemByFoodTypeId(foodItemDto.FoodTypeId, context);
+
                     if (context.Result != null)
                     {
                         return;
@@ -38,6 +40,7 @@ namespace PetFood.BusinessLogic.Filters
                 if (int.TryParse(context.ActionArguments["petId"].ToString(), out int petId))
                 {
                     await ValidateFoodItemByPetId(petId, context);
+
                     if (context.Result != null)
                     {
                         return;
@@ -50,6 +53,7 @@ namespace PetFood.BusinessLogic.Filters
                 if (int.TryParse(context.ActionArguments["foodTypeId"].ToString(), out int foodTypeId))
                 {
                     await ValidateFoodItemByFoodTypeId(foodTypeId, context);
+
                     if (context.Result != null)
                     {
                         return;
@@ -69,6 +73,7 @@ namespace PetFood.BusinessLogic.Filters
                 _logger.LogError($"PetId sent from client is invalid: {petId}. Pet with this Id does not exist.");
 
                 context.Result = new BadRequestObjectResult($"Invalid PetId: {petId}. Pet with this Id does not exist.");
+
                 return;
             }
         }
@@ -82,6 +87,7 @@ namespace PetFood.BusinessLogic.Filters
                 _logger.LogError($"FoodTypeId sent from client is invalid: {foodTypeId}. Food type with this Id does not exist.");
 
                 context.Result = new BadRequestObjectResult($"Invalid FoodTypeId: {foodTypeId}. FoodType with this Id does not exist.");
+
                 return;
             }
         }
