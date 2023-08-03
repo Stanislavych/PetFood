@@ -1,14 +1,17 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using PetFood.BusinessLogic.Dto;
 using PetFood.BusinessLogic.Filters;
 using PetFood.BusinessLogic.Implementations;
 using PetFood.BusinessLogic.Interfaces;
 using PetFood.BusinessLogic.Mappings;
+using PetFood.BusinessLogic.Validators;
 using PetFood.DAL.DatabaseContext;
 using PetFood.DAL.Models;
 using Serilog;
@@ -92,6 +95,15 @@ namespace PetFood.Extensions
             services.AddScoped<Microsoft.Extensions.Logging.ILogger, Logger<ValidateFoodItemAttribute>>();
             services.AddScoped<ValidationFilterAttribute>();
             services.AddScoped<ValidateFoodItemAttribute>();
+        }
+
+        public static void ConfigureValidators(this IServiceCollection services)
+        {
+            services.AddTransient<IValidator<PetDto>, PetDtoValidator>();
+            services.AddTransient<IValidator<UserRegistrationDto>, UserRegistrationDtoValidator>();
+            services.AddTransient<IValidator<UserLoginDto>, UserLoginDtoValidator>();
+            services.AddTransient<IValidator<FoodTypeDto>, FoodTypeDtoValidator>();
+            services.AddTransient<IValidator<FoodItemDto>, FoodItemDtoValidator>();
         }
 
         public static void ConfigureJWT(this IServiceCollection services, IConfiguration configuration)

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FluentValidation;
+using Microsoft.AspNetCore.Mvc;
 using PetFood.BusinessLogic.Dto;
 using PetFood.BusinessLogic.Filters;
 using PetFood.BusinessLogic.Interfaces;
@@ -10,10 +11,12 @@ namespace PetFood.Controllers
     public class PetController : ControllerBase
     {
         private readonly IPetService _petService;
+        private readonly IValidator<PetDto> _validator;
 
-        public PetController(IPetService petService)
+        public PetController(IPetService petService, IValidator<PetDto> validator)
         {
             _petService = petService;
+            _validator = validator;
         }
 
         [HttpGet]
@@ -28,6 +31,13 @@ namespace PetFood.Controllers
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<ActionResult<PetDto>> CreatePet([FromBody] PetDto petDto)
         {
+            var validationResult = await _validator.ValidateAsync(petDto);
+
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors);
+            }
+
             var newPet = await _petService.AddPetAsync(petDto);
 
             return Ok(newPet);
@@ -37,6 +47,13 @@ namespace PetFood.Controllers
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<ActionResult<PetDto>> UpdatePet([FromBody] PetDto petDto)
         {
+            var validationResult = await _validator.ValidateAsync(petDto);
+
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors);
+            }
+
             var updatedPet = await _petService.UpdatePetAsync(petDto);
 
             return Ok(updatedPet);
