@@ -26,10 +26,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configuration\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\PetFood.BusinessLogic\PetFood.BusinessLogic.csproj" />
     <ProjectReference Include="..\PetFood.DAL\PetFood.DAL.csproj" />
   </ItemGroup>
