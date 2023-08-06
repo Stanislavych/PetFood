@@ -5,9 +5,11 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetFood", "PetFood.csproj", "{FEF1E621-DA6A-460C-8DC6-B22689F83FAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetFood.DAL", "..\PetFood.DAL\PetFood.DAL.csproj", "{2BD3BBCD-22CB-4553-A63F-DA39616A063F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetFood.DAL", "..\PetFood.DAL\PetFood.DAL.csproj", "{2BD3BBCD-22CB-4553-A63F-DA39616A063F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetFood.BusinessLogic", "..\PetFood.BusinessLogic\PetFood.BusinessLogic.csproj", "{0F9B8533-C3C3-4BD0-887A-05B6143412B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetFood.BusinessLogic", "..\PetFood.BusinessLogic\PetFood.BusinessLogic.csproj", "{0F9B8533-C3C3-4BD0-887A-05B6143412B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetFood.Tests", "..\PetFood.Tests\PetFood.Tests.csproj", "{FBBC89D8-0457-4FD4-95A4-2C4353F40F0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0F9B8533-C3C3-4BD0-887A-05B6143412B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F9B8533-C3C3-4BD0-887A-05B6143412B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F9B8533-C3C3-4BD0-887A-05B6143412B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBBC89D8-0457-4FD4-95A4-2C4353F40F0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBBC89D8-0457-4FD4-95A4-2C4353F40F0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBBC89D8-0457-4FD4-95A4-2C4353F40F0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBBC89D8-0457-4FD4-95A4-2C4353F40F0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
