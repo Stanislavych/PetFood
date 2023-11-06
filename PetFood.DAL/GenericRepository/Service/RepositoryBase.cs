@@ -6,36 +6,44 @@ namespace PetFood.DAL.GenericRepository.Service
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        protected PetFood.DAL.DatabaseContext.DatabaseContext DatabaseContext;
+        protected PetFood.DAL.DatabaseContext.DatabaseContext _context;
 
-        public RepositoryBase(PetFood.DAL.DatabaseContext.DatabaseContext databaseContext)
+        public RepositoryBase(PetFood.DAL.DatabaseContext.DatabaseContext context)
         {
-            DatabaseContext = databaseContext;
+            _context = context;
         }
 
+        public DbSet<T> Set<T>()
+            where T : class
+        {
+            return _context.Set<T>();
+        }
         public async Task CreateAsync(T entity)
         {
-            await Task.Run(() => DatabaseContext.Set<T>().AddAsync(entity));
+            await Task.Run(() => Set<T>().AddAsync(entity));
         }
 
+        
         public async Task<IEnumerable<T>> FindAllAsync()
         {
-            return await Task.Run(() => DatabaseContext.Set<T>().AsNoTracking());
+            //а тебе пря во всех случаях нужно AsNoTracking?
+            return await Task.Run(() => Set<T>().AsNoTracking());
         }
 
         public async Task<IEnumerable<T>> FindByConditionAsync(Expression<Func<T, bool>> expression)
         {
-            return await Task.Run(() => DatabaseContext.Set<T>().Where(expression).AsNoTracking());
+            //а тебе пря во всех случаях нужно AsNoTracking?
+            return await Task.Run(() => Set<T>().Where(expression).AsNoTracking());
         }
 
         public async Task RemoveAsync(T entity)
         {
-            await Task.Run(() => DatabaseContext.Set<T>().Remove(entity));
+            await Task.Run(() => Set<T>().Remove(entity));
         }
 
         public async Task UpdateAsync(T entity)
         {
-            await Task.Run(() => DatabaseContext.Set<T>().Update(entity));
+            await Task.Run(() => Set<T>().Update(entity));
         }
     }
 }
