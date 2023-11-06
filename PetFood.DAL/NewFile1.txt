@@ -1,0 +1,5 @@
+папка GenericRepository лишняя
+
+не хватает entity
+
+ну и тут должны быть миграции а не в PetFood

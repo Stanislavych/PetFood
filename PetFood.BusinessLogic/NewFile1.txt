@@ -1,0 +1,3 @@
+лучше mapster, чем AutoMapper
+
+Services содержит Implementations и Interfaces

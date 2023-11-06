@@ -6,7 +6,8 @@ using PetFood.BusinessLogic.Interfaces;
 
 namespace PetFood.Controllers
 {
-    [Route("api/[controller]")]
+    //лучше писать название контроллера
+    [Route("api/foodItems")]
     [ApiController]
     public class FoodItemController : ControllerBase
     {
